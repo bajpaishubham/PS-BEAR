@@ -68,5 +68,5 @@ for i in related_docs_indices:
     st.write(subtopics[i], " - ", cosine_similarities[i])
     matches = matches + [{"subtopic": subtopics[i], "cosine_similarity": cosine_similarities[i]}]
 
-st.write(":blue[Bar Chart:]")
+st.write(":blue[Bar chart:]")
 st.bar_chart(matches, x = "subtopic", y = "cosine_similarity", color = "subtopic", horizontal=True)
