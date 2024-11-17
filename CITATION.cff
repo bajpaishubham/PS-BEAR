@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bajpai"
+  given-names: "Shubham"
+title: "PS-BEAR"
+version: Polar
+date-released: 2024-11-17
+url: "https://github.com/bajpaishubham/PS-BEAR"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Bajpai"
+    given-names: "Shubham"
+  doi: "10.13140/RG.2.2.13956.54409"
+  title: "Automated approaches for solving physics problems"
+  year: 2024
+  
