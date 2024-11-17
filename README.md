@@ -1,10 +1,10 @@
 # PS-BEAR
 
-A preprint version of a paper on PS-BEAR is available [here](http://dx.doi.org/10.13140/RG.2.2.13956.54409). For the code of Polar PS-BEAR, check the polar branch. The application is live [here](https://psbear.streamlit.app/).
+A preprint version of a paper on PS-BEAR is available [here](http://dx.doi.org/10.13140/RG.2.2.13956.54409). For the code of a specific version of PS-BEAR, check the specific branch. The application is live [here](https://psbear.streamlit.app/).
 
 ## Acknowledgement
 
-If you refer to this software or work in an academic publication, please use the following BibTeX:
+If you refer to this software or work in an academic publication, please cite as below:
 
 ```
 @unpublished{bajpai2024psbear,
