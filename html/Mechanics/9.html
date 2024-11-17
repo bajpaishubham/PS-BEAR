@@ -1,0 +1,1132 @@
+<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Aspects of fluid mechanics involving flow</div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:T%C3%BAnel_de_viento,_v%C3%B3rtice_de_Von_Karman.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif/310px-T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif" decoding="async" width="310" height="139" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6f/T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif/465px-T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6f/T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif/620px-T%C3%BAnel_de_viento%2C_v%C3%B3rtice_de_Von_Karman.gif 2x" data-file-width="850" data-file-height="380" /></a><figcaption>Computer generated animation of fluid in a tube flowing past a cylinder, showing the <a href="/wiki/Vortex_shedding" title="Vortex shedding">shedding</a> of a series of <a href="/wiki/Vortex" title="Vortex">vortices</a> in the flow behind it, called a <a href="/wiki/Von_K%C3%A1rm%C3%A1n_vortex_street" class="mw-redirect" title="Von Kármán vortex street">von Kármán vortex street</a>. The <a href="/wiki/Streamlines,_streaklines,_and_pathlines" title="Streamlines, streaklines, and pathlines">streamlines</a> show the direction of the fluid flow, and the color gradient shows the pressure at each point, from blue to green, yellow, and red indicating increasing pressure</figcaption></figure> 
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:Teardrop_shape.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Teardrop_shape.svg/300px-Teardrop_shape.svg.png" decoding="async" width="300" height="143" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Teardrop_shape.svg/450px-Teardrop_shape.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Teardrop_shape.svg/600px-Teardrop_shape.svg.png 2x" data-file-width="742" data-file-height="354" /></a><figcaption>Typical <a href="/wiki/Aerodynamic" class="mw-redirect" title="Aerodynamic">aerodynamic</a> teardrop shape, assuming a <a href="/wiki/Viscosity" title="Viscosity">viscous</a> medium passing from left to right, the diagram shows the pressure distribution as the thickness of the black line and shows the velocity in the <a href="/wiki/Boundary_layer" title="Boundary layer">boundary layer</a> as the violet triangles. The green <a href="/wiki/Vortex_generator" title="Vortex generator">vortex generators</a> prompt the transition to <a href="/wiki/Turbulent_flow" class="mw-redirect" title="Turbulent flow">turbulent flow</a> and prevent back-flow also called <a href="/wiki/Flow_separation" title="Flow separation">flow separation</a> from the high-pressure region in the back. The surface in front is as smooth as possible or even employs <a href="/wiki/Dermal_denticle" class="mw-redirect" title="Dermal denticle">shark-like skin</a>, as any turbulence here increases the energy of the airflow. The truncation on the right, known as a <a href="/wiki/Kammback" title="Kammback">Kammback</a>, also prevents backflow from the high-pressure region in the back across the <a href="/wiki/Spoiler_(aeronautics)" title="Spoiler (aeronautics)">spoilers</a> to the convergent part.</figcaption></figure>
+<style data-mw-deduplicate="TemplateStyles:r1129693374">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r1126788409">.mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}</style><style data-mw-deduplicate="TemplateStyles:r1246091330">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:var(--background-color-neutral-subtle,#f8f9fa);border:1px solid var(--border-color-base,#a2a9b1);padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:640px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}body.skin--responsive .mw-parser-output .sidebar a>img{max-width:none!important}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-night .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-list-title,html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle{background:transparent!important}html.skin-theme-clientpref-os .mw-parser-output .sidebar:not(.notheme) .sidebar-title-with-pretitle a{color:var(--color-progressive)!important}}@media print{body.ns-0 .mw-parser-output .sidebar{display:none!important}}</style><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1246091330"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><table class="sidebar sidebar-collapse nomobile nowraplinks plainlist"><tbody><tr><td class="sidebar-pretitle">Part of a series on</td></tr><tr><th class="sidebar-title-with-pretitle"><a href="/wiki/Continuum_mechanics" title="Continuum mechanics">Continuum mechanics</a></th></tr><tr><td class="sidebar-image"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle J=-D{\frac {d\varphi }{dx}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>J</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>D</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>&#x03C6;<!-- φ --></mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>x</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle J=-D{\frac {d\varphi }{dx}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1856f88def2056f28ed27c7d31180a6240820ea6" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.005ex; width:11.874ex; height:5.509ex;" alt="{\displaystyle J=-D{\frac {d\varphi }{dx}}}"></span><div class="sidebar-caption"><a href="/wiki/Fick%27s_laws_of_diffusion" title="Fick&#39;s laws of diffusion">Fick's laws of diffusion</a></div></td></tr><tr><td class="sidebar-content-with-subgroup">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;;color: var(--color-base)">Laws</div><div class="sidebar-list-content mw-collapsible-content"><table class="sidebar-subgroup"><tbody><tr><th class="sidebar-heading" style="font-style:italic;font-weight:normal;">
+Conservations</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Conservation_of_mass" title="Conservation of mass">Mass</a></li>
+<li><a href="/wiki/Conservation_of_momentum" class="mw-redirect" title="Conservation of momentum">Momentum</a></li>
+<li><a href="/wiki/Conservation_of_energy" title="Conservation of energy">Energy</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="font-style:italic;font-weight:normal;">
+Inequalities</th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Clausius%E2%80%93Duhem_inequality" title="Clausius–Duhem inequality">Clausius–Duhem (entropy)</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;;color: var(--color-base)"><a href="/wiki/Solid_mechanics" title="Solid mechanics">Solid mechanics</a></div><div class="sidebar-list-content mw-collapsible-content"><div class="hlist">
+<ul><li><a href="/wiki/Deformation_(physics)" title="Deformation (physics)">Deformation</a></li>
+<li><a href="/wiki/Elasticity_(physics)" title="Elasticity (physics)">Elasticity</a>
+<ul><li><a href="/wiki/Linear_elasticity" title="Linear elasticity">linear</a></li></ul></li>
+<li><a href="/wiki/Plasticity_(physics)" title="Plasticity (physics)">Plasticity</a></li>
+<li><a href="/wiki/Hooke%27s_law" title="Hooke&#39;s law">Hooke's law</a></li>
+<li><a href="/wiki/Stress_(mechanics)" title="Stress (mechanics)">Stress</a></li>
+<li><a href="/wiki/Strain_(mechanics)" title="Strain (mechanics)">Strain</a>
+<ul><li><a href="/wiki/Finite_strain_theory" title="Finite strain theory">Finite strain</a></li>
+<li><a href="/wiki/Infinitesimal_strain_theory" title="Infinitesimal strain theory">Infinitesimal strain</a></li></ul></li>
+<li><a href="/wiki/Compatibility_(mechanics)" title="Compatibility (mechanics)">Compatibility</a></li>
+<li><a href="/wiki/Bending" title="Bending">Bending</a></li>
+<li><a href="/wiki/Contact_mechanics" title="Contact mechanics">Contact mechanics</a>
+<ul><li><a href="/wiki/Frictional_contact_mechanics" title="Frictional contact mechanics">frictional</a></li></ul></li>
+<li><a href="/wiki/Material_failure_theory" title="Material failure theory">Material failure theory</a></li>
+<li><a href="/wiki/Fracture_mechanics" title="Fracture mechanics">Fracture mechanics</a></li></ul>
+</div></div></div></td>
+</tr><tr><td class="sidebar-content-with-subgroup">
+<div class="sidebar-list mw-collapsible"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;;color: var(--color-base)"><a href="/wiki/Fluid_mechanics" title="Fluid mechanics">Fluid mechanics</a></div><div class="sidebar-list-content mw-collapsible-content"><table class="sidebar-subgroup"><tbody><tr><th class="sidebar-heading" style="font-style:italic;">
+<a href="/wiki/Fluid" title="Fluid">Fluids</a></th></tr><tr><td class="sidebar-content">
+<div class="wraplinks">
+<ul><li><a href="/wiki/Hydrostatics" title="Hydrostatics">Statics</a>&#160;<b>·</b> <a class="mw-selflink selflink">Dynamics</a></li>
+<li><a href="/wiki/Archimedes%27_principle" title="Archimedes&#39; principle">Archimedes' principle</a>&#160;<b>·</b> <a href="/wiki/Bernoulli%27s_principle" title="Bernoulli&#39;s principle">Bernoulli's principle</a></li>
+<li><a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a></li>
+<li><a href="/wiki/Hagen%E2%80%93Poiseuille_equation" title="Hagen–Poiseuille equation">Poiseuille equation</a>&#160;<b>·</b> <a href="/wiki/Pascal%27s_law" title="Pascal&#39;s law">Pascal's law</a></li>
+<li><a href="/wiki/Viscosity" title="Viscosity">Viscosity</a>
+<ul><li>(<a href="/wiki/Newtonian_fluid" title="Newtonian fluid">Newtonian</a>&#160;<b>·</b> <a href="/wiki/Non-Newtonian_fluid" title="Non-Newtonian fluid">non-Newtonian</a>)</li></ul></li>
+<li><a href="/wiki/Buoyancy" title="Buoyancy">Buoyancy</a>&#160;<b>·</b> <a href="/wiki/Mixing_(process_engineering)" title="Mixing (process engineering)">Mixing</a>&#160;<b>·</b> <a href="/wiki/Pressure" title="Pressure">Pressure</a></li></ul>
+</div></td>
+</tr><tr><th class="sidebar-heading" style="font-style:italic;">
+<a href="/wiki/Liquid" title="Liquid">Liquids</a></th></tr><tr><td class="sidebar-content">
+<div class="hlist">
+<ul><li><a href="/wiki/Adhesion" title="Adhesion">Adhesion</a></li>
+<li><a href="/wiki/Capillary_action" title="Capillary action">Capillary action</a></li>
+<li><a href="/wiki/Chromatography" title="Chromatography">Chromatography</a></li>
+<li><a href="/wiki/Cohesion_(chemistry)" title="Cohesion (chemistry)">Cohesion (chemistry)</a></li>
+<li><a href="/wiki/Surface_tension" title="Surface tension">Surface tension</a></li></ul>
+</div></td>
+</tr><tr><th class="sidebar-heading" style="font-style:italic;">
+<a href="/wiki/Gas" title="Gas">Gases</a></th></tr><tr><td class="sidebar-content">
+<div class="hlist">
+<ul><li><a href="/wiki/Atmosphere" title="Atmosphere">Atmosphere</a></li>
+<li><a href="/wiki/Boyle%27s_law" title="Boyle&#39;s law">Boyle's law</a></li>
+<li><a href="/wiki/Charles%27s_law" title="Charles&#39;s law">Charles's law</a></li>
+<li><a href="/wiki/Combined_gas_law" class="mw-redirect" title="Combined gas law">Combined gas law</a></li>
+<li><a href="/wiki/Fick%27s_law" class="mw-redirect" title="Fick&#39;s law">Fick's law</a></li>
+<li><a href="/wiki/Gay-Lussac%27s_law" title="Gay-Lussac&#39;s law">Gay-Lussac's law</a></li>
+<li><a href="/wiki/Graham%27s_law" title="Graham&#39;s law">Graham's law</a></li></ul>
+</div></td>
+</tr><tr><th class="sidebar-heading" style="font-style:italic;">
+<a href="/wiki/Plasma_(physics)" title="Plasma (physics)">Plasma</a></th></tr></tbody></table></div></div></td>
+</tr><tr><td class="sidebar-content-with-subgroup">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;;color: var(--color-base)"><a href="/wiki/Rheology" title="Rheology">Rheology</a></div><div class="sidebar-list-content mw-collapsible-content"><table class="sidebar-subgroup"><tbody><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Viscoelasticity" title="Viscoelasticity">Viscoelasticity</a></li>
+<li><a href="/wiki/Rheometry" title="Rheometry">Rheometry</a></li>
+<li><a href="/wiki/Rheometer" title="Rheometer">Rheometer</a></li></ul></td>
+</tr><tr><th class="sidebar-heading" style="font-style:italic;">
+<a href="/wiki/Smart_fluid" title="Smart fluid">Smart fluids</a></th></tr><tr><td class="sidebar-content hlist">
+<ul><li><a href="/wiki/Electrorheological_fluid" title="Electrorheological fluid">Electrorheological</a></li>
+<li><a href="/wiki/Magnetorheological_fluid" title="Magnetorheological fluid">Magnetorheological</a></li>
+<li><a href="/wiki/Ferrofluid" title="Ferrofluid">Ferrofluids</a></li></ul></td>
+</tr></tbody></table></div></div></td>
+</tr><tr><td class="sidebar-content">
+<div class="sidebar-list mw-collapsible mw-collapsed"><div class="sidebar-list-title" style="background:transparent;border-top:1px solid #aaa;text-align:center;;color: var(--color-base)">Scientists</div><div class="sidebar-list-content mw-collapsible-content"><div class="hlist">
+<ul><li><a href="/wiki/Daniel_Bernoulli" title="Daniel Bernoulli">Bernoulli</a></li>
+<li><a href="/wiki/Robert_Boyle" title="Robert Boyle">Boyle</a></li>
+<li><a href="/wiki/Augustin-Louis_Cauchy" title="Augustin-Louis Cauchy">Cauchy</a></li>
+<li><a href="/wiki/Jacques_Charles" title="Jacques Charles">Charles</a></li>
+<li><a href="/wiki/Leonhard_Euler" title="Leonhard Euler">Euler</a></li>
+<li><a href="/wiki/Adolf_Eugen_Fick" title="Adolf Eugen Fick">Fick</a></li>
+<li><a href="/wiki/Joseph_Louis_Gay-Lussac" title="Joseph Louis Gay-Lussac">Gay-Lussac</a></li>
+<li><a href="/wiki/Thomas_Graham_(chemist)" title="Thomas Graham (chemist)">Graham</a></li>
+<li><a href="/wiki/Robert_Hooke" title="Robert Hooke">Hooke</a></li>
+<li><a href="/wiki/Isaac_Newton" title="Isaac Newton">Newton</a></li>
+<li><a href="/wiki/Claude-Louis_Navier" title="Claude-Louis Navier">Navier</a></li>
+<li><a href="/wiki/Walter_Noll" title="Walter Noll">Noll</a></li>
+<li><a href="/wiki/Blaise_Pascal" title="Blaise Pascal">Pascal</a></li>
+<li><a href="/wiki/Sir_George_Stokes,_1st_Baronet" title="Sir George Stokes, 1st Baronet">Stokes</a></li>
+<li><a href="/wiki/Clifford_Truesdell" title="Clifford Truesdell">Truesdell</a></li></ul>
+</div></div></div></td>
+</tr><tr><td class="sidebar-navbar"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1239400231">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Continuum_mechanics" title="Template:Continuum mechanics"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Continuum_mechanics" title="Template talk:Continuum mechanics"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Continuum_mechanics" title="Special:EditPage/Template:Continuum mechanics"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Physics" title="Physics">physics</a>, <a href="/wiki/Physical_chemistry" title="Physical chemistry">physical chemistry</a> and <a href="/wiki/Engineering" title="Engineering">engineering</a>, <b>fluid dynamics</b> is a subdiscipline of <a href="/wiki/Fluid_mechanics" title="Fluid mechanics">fluid mechanics</a> that describes the <b>flow</b> of <a href="/wiki/Fluid" title="Fluid">fluids</a> — <a href="/wiki/Liquid" title="Liquid">liquids</a> and <a href="/wiki/Gas" title="Gas">gases</a>. It has several subdisciplines, including <i><a href="/wiki/Aerodynamics" title="Aerodynamics">aerodynamics</a></i> (the study of air and other gases in motion) and <i><b>hydrodynamics</b></i> (the study of liquids in motion). Fluid dynamics has a wide range of applications, including calculating <a href="/wiki/Force" title="Force">forces</a> and <a href="/wiki/Moment_(physics)" title="Moment (physics)">moments</a> on <a href="/wiki/Aircraft" title="Aircraft">aircraft</a>, determining the <a href="/wiki/Mass_flow_rate" title="Mass flow rate">mass flow rate</a> of <a href="/wiki/Petroleum" title="Petroleum">petroleum</a> through <a href="/wiki/Pipeline_transport" class="mw-redirect" title="Pipeline transport">pipelines</a>, <a href="/wiki/Weather_forecasting" title="Weather forecasting">predicting weather patterns</a>, understanding <a href="/wiki/Nebula" title="Nebula">nebulae</a> in <a href="/wiki/Interstellar_space" class="mw-redirect" title="Interstellar space">interstellar space</a> and <a href="/wiki/Nuclear_weapon_design" title="Nuclear weapon design">modelling fission weapon detonation</a>.
+</p><p>Fluid dynamics offers a systematic structure—which underlies these <a href="/wiki/Practical_disciplines" class="mw-redirect" title="Practical disciplines">practical disciplines</a>—that embraces empirical and semi-empirical laws derived from <a href="/wiki/Flow_measurement" title="Flow measurement">flow measurement</a> and used to solve practical problems. The solution to a fluid dynamics problem typically involves the calculation of various properties of the fluid, such as <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a>, <a href="/wiki/Pressure" title="Pressure">pressure</a>, <a href="/wiki/Density" title="Density">density</a>, and <a href="/wiki/Temperature" title="Temperature">temperature</a>, as functions of space and time.
+</p><p>Before the twentieth century, "hydrodynamics" was synonymous with fluid dynamics. This is still reflected in names of some fluid dynamics topics, like <a href="/wiki/Magnetohydrodynamics" title="Magnetohydrodynamics">magnetohydrodynamics</a> and <a href="/wiki/Hydrodynamic_stability" title="Hydrodynamic stability">hydrodynamic stability</a>, both of which can also be applied to gases.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Equations">Equations</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=1" title="Edit section: Equations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1236090951">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}@media print{body.ns-0 .mw-parser-output .hatnote{display:none!important}}</style><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Transport_phenomena" title="Transport phenomena">Transport phenomena</a></div>
+<p>The foundational axioms of fluid dynamics are the <a href="/wiki/Conservation_law_(physics)" class="mw-redirect" title="Conservation law (physics)">conservation laws</a>, specifically, <a href="/wiki/Conservation_of_mass" title="Conservation of mass">conservation of mass</a>, <a href="/wiki/Conservation_of_momentum" class="mw-redirect" title="Conservation of momentum">conservation of linear momentum</a>, and <a href="/wiki/Conservation_of_energy" title="Conservation of energy">conservation of energy</a> (also known as the <a href="/wiki/First_Law_of_Thermodynamics" class="mw-redirect" title="First Law of Thermodynamics">First Law of Thermodynamics</a>). These are based on <a href="/wiki/Classical_mechanics" title="Classical mechanics">classical mechanics</a> and are modified in <a href="/wiki/Quantum_mechanics" title="Quantum mechanics">quantum mechanics</a> and <a href="/wiki/General_relativity" title="General relativity">general relativity</a>. They are expressed using the <a href="/wiki/Reynolds_transport_theorem" title="Reynolds transport theorem">Reynolds transport theorem</a>.
+</p><p>In addition to the above, fluids are assumed to obey the <a href="/wiki/Continuum_assumption" class="mw-redirect" title="Continuum assumption">continuum assumption</a>. At small scale, all fluids are composed of molecules that collide with one another and solid objects. However, the continuum assumption assumes that fluids are continuous, rather than discrete. Consequently, it is assumed that properties such as density, pressure, temperature, and flow velocity are well-defined at <a href="/wiki/Infinitesimal" title="Infinitesimal">infinitesimally</a> small points in space and vary continuously from one point to another. The fact that the fluid is made up of discrete molecules is ignored.
+</p><p>For fluids that are sufficiently dense to be a continuum, do not contain ionized species, and have flow velocities that are small in relation to the speed of light, the momentum equations for <a href="/wiki/Newtonian_fluid" title="Newtonian fluid">Newtonian fluids</a> are the <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a>—which is a <a href="/wiki/Non-linear" class="mw-redirect" title="Non-linear">non-linear</a> set of <a href="/wiki/Differential_equations" class="mw-redirect" title="Differential equations">differential equations</a> that describes the flow of a fluid whose stress depends linearly on flow velocity gradients and pressure. The unsimplified equations do not have a general <a href="/wiki/Solution_in_closed_form" class="mw-redirect" title="Solution in closed form">closed-form solution</a>, so they are primarily of use in <a href="/wiki/Computational_fluid_dynamics" title="Computational fluid dynamics">computational fluid dynamics</a>. The equations can be simplified in several ways, all of which make them easier to solve. Some of the simplifications allow some simple fluid dynamics problems to be solved in closed form.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2014)">citation needed</span></a></i>&#93;</sup>
+</p><p>In addition to the mass, momentum, and energy conservation equations, a <a href="/wiki/Thermodynamics" title="Thermodynamics">thermodynamic</a> equation of state that gives the pressure as a function of other thermodynamic variables is required to completely describe the problem. An example of this would be the <a href="/wiki/Ideal_gas_law" title="Ideal gas law">perfect gas equation of state</a>:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p={\frac {\rho R_{u}T}{M}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C1;<!-- ρ --></mi>
+              <msub>
+                <mi>R</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>u</mi>
+                </mrow>
+              </msub>
+              <mi>T</mi>
+            </mrow>
+            <mi>M</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p={\frac {\rho R_{u}T}{M}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6426187cad7ee42ff2c0d21b58c6b97acb785fbc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; margin-left: -0.089ex; width:10.968ex; height:5.343ex;" alt="{\displaystyle p={\frac {\rho R_{u}T}{M}}}"></span></dd></dl>
+<p>where <span class="texhtml mvar" style="font-style:italic;">p</span> is <a href="/wiki/Pressure" title="Pressure">pressure</a>, <span class="texhtml mvar" style="font-style:italic;">ρ</span> is <a href="/wiki/Density" title="Density">density</a>, and <span class="texhtml mvar" style="font-style:italic;">T</span> is the <a href="/wiki/Absolute_temperature" class="mw-redirect" title="Absolute temperature">absolute temperature</a>, while <span class="texhtml mvar" style="font-style:italic;">R<sub>u</sub></span> is the <a href="/wiki/Gas_constant" title="Gas constant">gas constant</a> and <span class="texhtml mvar" style="font-style:italic;">M</span> is <a href="/wiki/Molar_mass" title="Molar mass">molar mass</a> for a particular gas. A <a href="/wiki/Constitutive_equation" title="Constitutive equation">constitutive relation</a> may also be useful.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Conservation_laws">Conservation laws</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=2" title="Edit section: Conservation laws"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Three conservation laws are used to solve fluid dynamics problems, and may be written in <a href="/wiki/Integral" title="Integral">integral</a> or <a href="/wiki/Differential_(infinitesimal)" class="mw-redirect" title="Differential (infinitesimal)">differential</a> form. The conservation laws may be applied to a region of the flow called a <i>control volume</i>. A control volume is a discrete volume in space through which fluid is assumed to flow. The integral formulations of the conservation laws are used to describe the change of mass, momentum, or energy within the control volume. Differential formulations of the conservation laws apply <a href="/wiki/Stokes%27_theorem" title="Stokes&#39; theorem">Stokes' theorem</a> to yield an expression that may be interpreted as the integral form of the law applied to an infinitesimally small volume (at a point) within the flow.
+</p>
+<style data-mw-deduplicate="TemplateStyles:r1228772891">.mw-parser-output .glossary dt{margin-top:0.4em}.mw-parser-output .glossary dt+dt{margin-top:-0.2em}.mw-parser-output .glossary .templatequote{margin-top:0;margin-bottom:-0.5em}</style>
+<dl class="glossary">
+<dt id="mass_continuity_(conservation_of_mass)"><dfn><a href="/wiki/Continuity_equation#Fluid_dynamics" title="Continuity equation">Mass continuity</a> (conservation of mass)</dfn></dt><dd> The rate of change of fluid mass inside a control volume must be equal to the net rate of fluid flow into the volume.  Physically, this statement requires that mass is neither created nor destroyed in the control volume,<sup id="cite_ref-J.D._Anderson_2007_2-0" class="reference"><a href="#cite_note-J.D._Anderson_2007-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> and can be translated into the integral form of the continuity equation:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial }{\partial t}}\iiint _{V}\rho \,dV=-\,{}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>V</mi>
+          </mrow>
+        </msub>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial }{\partial t}}\iiint _{V}\rho \,dV=-\,{}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dd8157bf2a1c84569a7a0ce9d6e1b4deb96e4870" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:18.849ex; height:5.843ex;" alt="{\displaystyle {\frac {\partial }{\partial t}}\iiint _{V}\rho \,dV=-\,{}}"></span> <span class="nowrap mw-no-invert"> <span class="mw-default-size" typeof="mw:File"><span><img alt="\oiint" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/25px-OiintLaTeX.svg.png" decoding="async" width="25" height="44" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/38px-OiintLaTeX.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/50px-OiintLaTeX.svg.png 2x" data-file-width="204" data-file-height="354" /></span></span><span style="position:relative; right:8px; top:18px; margin-right:-8px;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\scriptstyle S}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="1">
+            <mi>S</mi>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\scriptstyle S}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1dca5757c655f5ab53abd4b0d246dcfb478810e5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.06ex; height:1.676ex;" alt="{\displaystyle {\scriptstyle S}}"></span></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {}\,\rho \mathbf {u} \cdot d\mathbf {S} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {}\,\rho \mathbf {u} \cdot d\mathbf {S} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/895a626389b4242df2c5496df68c53d848df64e2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.455ex; height:2.676ex;" alt="{\displaystyle {}\,\rho \mathbf {u} \cdot d\mathbf {S} }"></span></span></dd></dl>
+
+Above, <span class="texhtml mvar" style="font-style:italic;">ρ</span> is the fluid density, <span class="texhtml"><b>u</b></span> is the <a href="/wiki/Flow_velocity" title="Flow velocity">flow velocity</a> vector, and <span class="texhtml mvar" style="font-style:italic;">t</span> is time.  The left-hand side of the above expression is the rate of increase of mass within the volume and contains a triple integral over the control volume, whereas the right-hand side contains an integration over the surface of the control volume of mass convected into the system.  Mass flow into the system is accounted as positive, and since the normal vector to the surface is opposite to the sense of flow into the system the term is negated. The differential form of the continuity equation is, by the <a href="/wiki/Divergence_theorem" title="Divergence theorem">divergence theorem</a>:
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eee4af996c7fb2aa7737fc0ac598d49b215139c3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.005ex; width:19.15ex; height:5.676ex;" alt="{\displaystyle \ {\frac {\partial \rho }{\partial t}}+\nabla \cdot (\rho \mathbf {u} )=0}"></span></dd></dl></dd></dl>
+
+<dt id="conservation_of_momentum"><dfn><a href="/wiki/Momentum" title="Momentum">Conservation of momentum</a></dfn></dt>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/Cauchy_momentum_equation" title="Cauchy momentum equation">Cauchy momentum equation</a></div><dd> <a href="/wiki/Newton%27s_second_law_of_motion" class="mw-redirect" title="Newton&#39;s second law of motion">Newton's second law of motion</a> applied to a control volume, is a statement that any change in momentum of the fluid within that control volume will be due to the net flow of momentum into the volume and the action of external forces acting on the fluid within the volume.
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\partial }{\partial t}}\iiint _{\scriptstyle V}\rho \mathbf {u} \,dV=-\,{}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <msub>
+          <mo>&#x222D;<!-- ∭ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="1">
+              <mi>V</mi>
+            </mstyle>
+          </mrow>
+        </msub>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mi>V</mi>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\partial }{\partial t}}\iiint _{\scriptstyle V}\rho \mathbf {u} \,dV=-\,{}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5f7893e0132f10533138c77fd6637267049bdd0a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:20.334ex; height:5.843ex;" alt="{\displaystyle {\frac {\partial }{\partial t}}\iiint _{\scriptstyle V}\rho \mathbf {u} \,dV=-\,{}}"></span> <span class="nowrap mw-no-invert"> <span class="mw-default-size" typeof="mw:File"><span><img alt="\oiint" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/25px-OiintLaTeX.svg.png" decoding="async" width="25" height="44" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/38px-OiintLaTeX.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/50px-OiintLaTeX.svg.png 2x" data-file-width="204" data-file-height="354" /></span></span><span style="position:relative; right:8px; top:18px; margin-right:-8px;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle _{\scriptstyle S}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mstyle displaystyle="false" scriptlevel="1">
+              <mi>S</mi>
+            </mstyle>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle _{\scriptstyle S}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50621c1e6a22713ac2371b0e59530590140d11bc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:1.292ex; height:1.676ex;" alt="{\displaystyle _{\scriptstyle S}}"></span></span> </span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle (\rho \mathbf {u} \cdot d\mathbf {S} )\mathbf {u} -{}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">u</mi>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (\rho \mathbf {u} \cdot d\mathbf {S} )\mathbf {u} -{}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/34d7baca7b70af9ddfabd4855ed7d5ba627fb13b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:13.202ex; height:2.843ex;" alt="{\displaystyle (\rho \mathbf {u} \cdot d\mathbf {S} )\mathbf {u} -{}}"></span> <span class="nowrap mw-no-invert"> <span class="mw-default-size" typeof="mw:File"><span><img alt="\oiint" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/25px-OiintLaTeX.svg.png" decoding="async" width="25" height="44" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/38px-OiintLaTeX.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/OiintLaTeX.svg/50px-OiintLaTeX.svg.png 2x" data-file-width="204" data-file-height="354" /></span></span><span style="position:relative; right:8px; top:18px; margin-right:-8px;"><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\scriptstyle S}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="false" scriptlevel="1">
+            <mi>S</mi>
+          </mstyle>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\scriptstyle S}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1dca5757c655f5ab53abd4b0d246dcfb478810e5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.06ex; height:1.676ex;" alt="{\displaystyle {\scriptstyle S}}"></span></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {}\,p\,d\mathbf {S} }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+
+        </mrow>
+        <mspace width="thinmathspace" />
+        <mi>p</mi>
+        <mspace width="thinmathspace" />
+        <mi>d</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">S</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {}\,p\,d\mathbf {S} }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a09b9131ba87c6d14516716e280545e959b6e73f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:4.645ex; height:2.509ex;" alt="{\displaystyle {}\,p\,d\mathbf {S} }"></span></span> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \displaystyle {}+\iiint _{\scriptstyle V}\rho \mathbf {f} _{\text{body}}\,dV+\mathbf {F} _{\text{surf}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+
+          </mrow>
+          <mo>+</mo>
+          <msub>
+            <mo>&#x222D;<!-- ∭ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mstyle displaystyle="false" scriptlevel="1">
+                <mi>V</mi>
+              </mstyle>
+            </mrow>
+          </msub>
+          <mi>&#x03C1;<!-- ρ --></mi>
+          <msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">f</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>body</mtext>
+            </mrow>
+          </msub>
+          <mspace width="thinmathspace" />
+          <mi>d</mi>
+          <mi>V</mi>
+          <mo>+</mo>
+          <msub>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="bold">F</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>surf</mtext>
+            </mrow>
+          </msub>
+        </mstyle>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \displaystyle {}+\iiint _{\scriptstyle V}\rho \mathbf {f} _{\text{body}}\,dV+\mathbf {F} _{\text{surf}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0492efaf7b82846ff1d4194cc2ff767bc9bb5344" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:25.046ex; height:5.676ex;" alt="{\displaystyle \displaystyle {}+\iiint _{\scriptstyle V}\rho \mathbf {f} _{\text{body}}\,dV+\mathbf {F} _{\text{surf}}}"></span></dd></dl>
+<p>In the above integral formulation of this equation, the term on the left is the net change of momentum within the volume. The first term on the right is the net rate at which momentum is convected into the volume. The second term on the right is the force due to pressure on the volume's surfaces. The first two terms on the right are negated since momentum entering the system is accounted as positive, and the normal is opposite the direction of the velocity <span class="texhtml"><b>u</b></span> and pressure forces. The third term on the right is the net acceleration of the mass within the volume due to any <a href="/wiki/Body_force" title="Body force">body forces</a> (here represented by <span class="texhtml"><b>f</b><sub>body</sub></span>). <a href="/wiki/Surface_force" title="Surface force">Surface forces</a>, such as viscous forces, are represented by <span class="texhtml"><b>F</b><sub>surf</sub></span>, the net force due to <a href="/wiki/Stress_(mechanics)" title="Stress (mechanics)">shear forces</a> acting on the volume surface. The momentum balance can also be written for a <i>moving</i> control volume.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>The following is the differential form of the momentum conservation equation.  Here, the volume is reduced to an infinitesimally small point, and both surface and body forces are accounted for in one total force, <span class="texhtml"><b>F</b></span>.  For example, <span class="texhtml"><b>F</b></span> may be expanded into an expression for the frictional and gravitational forces acting at a point in a flow.
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ {\frac {D\mathbf {u} }{Dt}}=\mathbf {F} -{\frac {\nabla p}{\rho }}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mtext>&#xA0;</mtext>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>D</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="bold">u</mi>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mi>D</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="bold">F</mi>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+              <mi>p</mi>
+            </mrow>
+            <mi>&#x03C1;<!-- ρ --></mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ {\frac {D\mathbf {u} }{Dt}}=\mathbf {F} -{\frac {\nabla p}{\rho }}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/322050170083e8f10d7bae0dff4d7985044d6acd" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.338ex; width:16.389ex; height:5.843ex;" alt="{\displaystyle \ {\frac {D\mathbf {u} }{Dt}}=\mathbf {F} -{\frac {\nabla p}{\rho }}}"></span></dd></dl>
+In aerodynamics, air is assumed to be a <a href="/wiki/Newtonian_fluid" title="Newtonian fluid">Newtonian fluid</a>, which posits a linear relationship between the shear stress (due to internal friction forces) and the rate of strain of the fluid. The equation above is a vector equation in a three-dimensional flow, but it can be expressed as three scalar equations in three coordinate directions. The conservation of momentum equations for the compressible, viscous flow case is called the Navier–Stokes equations.<sup id="cite_ref-J.D._Anderson_2007_2-1" class="reference"><a href="#cite_note-J.D._Anderson_2007-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup></dd>
+
+<dt id="conservation_of_energy"><dfn><a href="/wiki/Conservation_of_energy" title="Conservation of energy">Conservation of energy</a></dfn></dt>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">See also: <a href="/wiki/First_law_of_thermodynamics_(fluid_mechanics)" title="First law of thermodynamics (fluid mechanics)">First law of thermodynamics (fluid mechanics)</a></div><dd>Although <a href="/wiki/Energy" title="Energy">energy</a> can be converted from one form to another, the total <a href="/wiki/Energy" title="Energy">energy</a> in a closed system remains constant.
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \ \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot \left(k\nabla T\right)+\Phi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mtext>&#xA0;</mtext>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>D</mi>
+              <mi>h</mi>
+            </mrow>
+            <mrow>
+              <mi>D</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>D</mi>
+              <mi>p</mi>
+            </mrow>
+            <mrow>
+              <mi>D</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+        <mo>&#x22C5;<!-- ⋅ --></mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>k</mi>
+            <mi mathvariant="normal">&#x2207;<!-- ∇ --></mi>
+            <mi>T</mi>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>+</mo>
+        <mi mathvariant="normal">&#x03A6;<!-- Φ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot \left(k\nabla T\right)+\Phi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4e5bc7b3ead6dff6ab61f80fa405cc8d549ec07" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:30.477ex; height:5.343ex;" alt="{\displaystyle \ \rho {\frac {Dh}{Dt}}={\frac {Dp}{Dt}}+\nabla \cdot \left(k\nabla T\right)+\Phi }"></span></dd></dl>
+Above, <span class="texhtml mvar" style="font-style:italic;">h</span> is the specific <a href="/wiki/Enthalpy" title="Enthalpy">enthalpy</a>, <span class="texhtml mvar" style="font-style:italic;">k</span> is the <a href="/wiki/Thermal_conductivity" class="mw-redirect" title="Thermal conductivity">thermal conductivity</a> of the fluid, <span class="texhtml mvar" style="font-style:italic;">T</span> is temperature, and <span class="texhtml mvar" style="font-style:italic;">Φ</span> is the viscous dissipation function. The viscous dissipation function governs the rate at which the mechanical energy of the flow is converted to heat. The <a href="/wiki/Second_law_of_thermodynamics" title="Second law of thermodynamics">second law of thermodynamics</a> requires that the dissipation term is always positive: viscosity cannot create energy within the control volume.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup> The expression on the left side is a <a href="/wiki/Material_derivative" title="Material derivative">material derivative</a>.</dd>
+
+<div class="mw-heading mw-heading2"><h2 id="Classifications">Classifications</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=3" title="Edit section: Classifications"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Compressible_versus_incompressible_flow">Compressible versus incompressible flow</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=4" title="Edit section: Compressible versus incompressible flow"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>All fluids are <a href="/wiki/Compressibility" title="Compressibility">compressible</a> to an extent; that is, changes in pressure or temperature cause changes in density. However, in many situations the changes in pressure and temperature are sufficiently small that the changes in density are negligible. In this case the flow can be modelled as an <a href="/wiki/Incompressible_flow" title="Incompressible flow">incompressible flow</a>. Otherwise the more general <a href="/wiki/Compressible_flow" title="Compressible flow">compressible flow</a> equations must be used.
+</p><p>Mathematically, incompressibility is expressed by saying that the density <span class="texhtml mvar" style="font-style:italic;">ρ</span> of a <a href="/wiki/Fluid_parcel" title="Fluid parcel">fluid parcel</a> does not change as it moves in the flow field, that is,
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {\mathrm {D} \rho }{\mathrm {D} t}}=0\,,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">D</mi>
+              </mrow>
+              <mi>&#x03C1;<!-- ρ --></mi>
+            </mrow>
+            <mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant="normal">D</mi>
+              </mrow>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+        <mspace width="thinmathspace" />
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {\mathrm {D} \rho }{\mathrm {D} t}}=0\,,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4789e5dfcc15378e021a834cebba54de5b18502" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.838ex; width:9.109ex; height:5.343ex;" alt="{\displaystyle {\frac {\mathrm {D} \rho }{\mathrm {D} t}}=0\,,}"></span></dd></dl>
+<p>where <span class="texhtml"><style data-mw-deduplicate="TemplateStyles:r1214402035">.mw-parser-output .sfrac{white-space:nowrap}.mw-parser-output .sfrac.tion,.mw-parser-output .sfrac .tion{display:inline-block;vertical-align:-0.5em;font-size:85%;text-align:center}.mw-parser-output .sfrac .num{display:block;line-height:1em;margin:0.0em 0.1em;border-bottom:1px solid}.mw-parser-output .sfrac .den{display:block;line-height:1em;margin:0.1em 0.1em}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);clip-path:polygon(0px 0px,0px 0px,0px 0px);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}</style><span class="sfrac">&#8288;<span class="tion"><span class="num">D</span><span class="sr-only">/</span><span class="den">D<i>t</i></span></span>&#8288;</span></span> is the <a href="/wiki/Material_derivative" title="Material derivative">material derivative</a>, which is the sum of <a href="/wiki/Time_derivative" title="Time derivative">local</a> and <a href="/wiki/Convective_derivative" class="mw-redirect" title="Convective derivative">convective derivatives</a>. This additional constraint simplifies the governing equations, especially in the case when the fluid has a uniform density.
+</p><p>For flow of gases, to determine whether to use compressible or incompressible fluid dynamics, the <a href="/wiki/Mach_number" title="Mach number">Mach number</a> of the flow is evaluated. As a rough guide, compressible effects can be ignored at Mach numbers below approximately 0.3. For liquids, whether the incompressible assumption is valid depends on the fluid properties (specifically the critical pressure and temperature of the fluid) and the flow conditions (how close to the critical pressure the actual flow pressure becomes). <a href="/wiki/Acoustics" title="Acoustics">Acoustic</a> problems always require allowing compressibility, since <a href="/wiki/Sound_waves" class="mw-redirect" title="Sound waves">sound waves</a> are compression waves involving changes in pressure and density of the medium through which they propagate.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Newtonian_versus_non-Newtonian_fluids">Newtonian versus non-Newtonian fluids</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=5" title="Edit section: Newtonian versus non-Newtonian fluids"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Flow_around_a_wing.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flow_around_a_wing.gif/220px-Flow_around_a_wing.gif" decoding="async" width="220" height="165" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flow_around_a_wing.gif/330px-Flow_around_a_wing.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flow_around_a_wing.gif/440px-Flow_around_a_wing.gif 2x" data-file-width="640" data-file-height="480" /></a><figcaption>Flow around an <a href="/wiki/Airfoil" title="Airfoil">airfoil</a></figcaption></figure>
+<p>All fluids, except <a href="/wiki/Superfluids" class="mw-redirect" title="Superfluids">superfluids</a>, are viscous, meaning that they exert some resistance to deformation: neighbouring parcels of fluid moving at different velocities exert viscous forces on each other. The velocity gradient is referred to as a <a href="/wiki/Strain_(materials_science)" class="mw-redirect" title="Strain (materials science)">strain rate</a>; it has dimensions <span class="texhtml"><i>T</i><span style="padding-left:0.12em;"><sup>−1</sup></span></span>. <a href="/wiki/Isaac_Newton" title="Isaac Newton">Isaac Newton</a> showed that for many familiar fluids such as <a href="/wiki/Water" title="Water">water</a> and <a href="/wiki/Earth%27s_atmosphere" class="mw-redirect" title="Earth&#39;s atmosphere">air</a>, the <a href="/wiki/Stress_(physics)" class="mw-redirect" title="Stress (physics)">stress</a> due to these viscous forces is linearly related to the strain rate. Such fluids are called <a href="/wiki/Newtonian_fluids" class="mw-redirect" title="Newtonian fluids">Newtonian fluids</a>. The coefficient of proportionality is called the fluid's viscosity; for Newtonian fluids, it is a fluid property that is independent of the strain rate.
+</p><p><a href="/wiki/Non-Newtonian_fluid" title="Non-Newtonian fluid">Non-Newtonian fluids</a> have a more complicated, non-linear stress-strain behaviour. The sub-discipline of <a href="/wiki/Rheology" title="Rheology">rheology</a> describes the stress-strain behaviours of such fluids, which include <a href="/wiki/Emulsion" title="Emulsion">emulsions</a> and <a href="/wiki/Slurries" class="mw-redirect" title="Slurries">slurries</a>, some <a href="/wiki/Viscoelasticity" title="Viscoelasticity">viscoelastic</a> materials such as <a href="/wiki/Blood" title="Blood">blood</a> and some <a href="/wiki/Polymer" title="Polymer">polymers</a>, and <i>sticky liquids</i> such as <a href="/wiki/Latex" title="Latex">latex</a>, <a href="/wiki/Honey" title="Honey">honey</a> and <a href="/wiki/Lubricants" class="mw-redirect" title="Lubricants">lubricants</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Inviscid_versus_viscous_versus_Stokes_flow">Inviscid versus viscous versus Stokes flow</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=6" title="Edit section: Inviscid versus viscous versus Stokes flow"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The dynamic of fluid parcels is described with the help of <a href="/wiki/Newton%27s_second_law" class="mw-redirect" title="Newton&#39;s second law">Newton's second law</a>. An accelerating parcel of fluid is subject to inertial effects.
+</p><p>The <a href="/wiki/Reynolds_number" title="Reynolds number">Reynolds number</a> is a <a href="/wiki/Dimensionless_quantity" title="Dimensionless quantity">dimensionless quantity</a> which characterises the magnitude of inertial effects compared to the magnitude of viscous effects. A low Reynolds number (<span class="texhtml"><i>Re</i> ≪ 1</span>) indicates that viscous forces are very strong compared to inertial forces. In such cases, inertial forces are sometimes neglected; this flow regime is called <a href="/wiki/Stokes_flow" title="Stokes flow">Stokes or creeping flow</a>.
+</p><p>In contrast, high Reynolds numbers (<span class="texhtml"><i>Re</i> ≫ 1</span>) indicate that the inertial effects have more effect on the velocity field than the viscous (friction) effects. In high Reynolds number flows, the flow is often modeled as an <a href="/wiki/Inviscid_flow" title="Inviscid flow">inviscid flow</a>, an approximation in which viscosity is completely neglected. Eliminating viscosity allows the <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a> to be simplified into the <a href="/wiki/Euler_equations_(fluid_dynamics)" title="Euler equations (fluid dynamics)">Euler equations</a>. The integration of the Euler equations along a streamline in an inviscid flow yields <a href="/wiki/Bernoulli%27s_equation" class="mw-redirect" title="Bernoulli&#39;s equation">Bernoulli's equation</a>. When, in addition to being inviscid, the flow is <a href="/wiki/Lamellar_field" class="mw-redirect" title="Lamellar field">irrotational</a> everywhere, Bernoulli's equation can completely describe the flow everywhere. Such flows are called <a href="/wiki/Potential_flow" title="Potential flow">potential flows</a>, because the velocity field may be expressed as the <a href="/wiki/Gradient" title="Gradient">gradient</a> of a potential energy expression.
+</p><p>This idea can work fairly well when the Reynolds number is high. However, problems such as those involving solid boundaries may require that the viscosity be included. Viscosity cannot be neglected near solid boundaries because the <a href="/wiki/No-slip_condition" title="No-slip condition">no-slip condition</a> generates a thin region of large strain rate, the <a href="/wiki/Boundary_layer" title="Boundary layer">boundary layer</a>, in which <a href="/wiki/Viscosity" title="Viscosity">viscosity</a> effects dominate and which thus generates <a href="/wiki/Vorticity" title="Vorticity">vorticity</a>. Therefore, to calculate net forces on bodies (such as wings), viscous flow equations must be used: inviscid flow theory fails to predict <a href="/wiki/Drag_(physics)" title="Drag (physics)">drag forces</a>, a limitation known as the <a href="/wiki/D%27Alembert%27s_paradox" title="D&#39;Alembert&#39;s paradox">d'Alembert's paradox</a>.
+</p><p>A commonly used<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> model, especially in <a href="/wiki/Computational_fluid_dynamics" title="Computational fluid dynamics">computational fluid dynamics</a>, is to use two flow models: the Euler equations away from the body, and <a href="/wiki/Boundary_layer" title="Boundary layer">boundary layer</a> equations in a region close to the body. The two solutions can then be matched with each other, using the <a href="/wiki/Method_of_matched_asymptotic_expansions" title="Method of matched asymptotic expansions">method of matched asymptotic expansions</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Steady_versus_unsteady_flow"><span class="anchor" id="Steady_vs_unsteady_flow"></span> Steady versus unsteady flow</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=7" title="Edit section: Steady versus unsteady flow"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure typeof="mw:File/Thumb"><a href="/wiki/File:HD-Rayleigh-Taylor.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/HD-Rayleigh-Taylor.gif/320px-HD-Rayleigh-Taylor.gif" decoding="async" width="320" height="249" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/HD-Rayleigh-Taylor.gif/480px-HD-Rayleigh-Taylor.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d6/HD-Rayleigh-Taylor.gif/640px-HD-Rayleigh-Taylor.gif 2x" data-file-width="1978" data-file-height="1541" /></a><figcaption>Hydrodynamics simulation of the <a href="/wiki/Rayleigh%E2%80%93Taylor_instability" title="Rayleigh–Taylor instability">Rayleigh–Taylor instability</a><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup> </figcaption></figure>
+<p>A flow that is not a function of time is called <b>steady flow</b>. Steady-state flow refers to the condition where the fluid properties at a point in the system do not change over time. Time dependent flow is known as unsteady (also called transient<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup>). Whether a particular flow is steady or unsteady, can depend on the chosen frame of reference. For instance, laminar flow over a <a href="/wiki/Sphere" title="Sphere">sphere</a> is steady in the frame of reference that is stationary with respect to the sphere. In a frame of reference that is stationary with respect to a background flow, the flow is unsteady.
+</p><p><a href="/wiki/Turbulence" title="Turbulence">Turbulent</a> flows are unsteady by definition. A turbulent flow can, however, be <a href="/wiki/Stationary_process" title="Stationary process">statistically stationary</a>. The random velocity field <span class="texhtml"><i>U</i>(<i>x</i>, <i>t</i>)</span> is statistically stationary if all statistics are invariant under a shift in time.<sup id="cite_ref-pope_9-0" class="reference"><a href="#cite_note-pope-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup><sup class="reference nowrap"><span title="Page / location: 75">&#58;&#8202;75&#8202;</span></sup> This roughly means that all statistical properties are constant in time. Often, the mean <a href="/wiki/Field_(physics)" title="Field (physics)">field</a> is the object of interest, and this is constant too in a statistically stationary flow.
+</p><p>Steady flows are often more tractable than otherwise similar unsteady flows. The governing equations of a steady problem have one dimension fewer (time) than the governing equations of the same problem without taking advantage of the steadiness of the flow field.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Laminar_versus_turbulent_flow">Laminar versus turbulent flow</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=8" title="Edit section: Laminar versus turbulent flow"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/File:Laminar-turbulent_transition.jpg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Laminar-turbulent_transition.jpg/220px-Laminar-turbulent_transition.jpg" decoding="async" width="220" height="283" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Laminar-turbulent_transition.jpg/330px-Laminar-turbulent_transition.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Laminar-turbulent_transition.jpg/440px-Laminar-turbulent_transition.jpg 2x" data-file-width="2152" data-file-height="2773" /></a><figcaption>The transition from laminar to turbulent flow</figcaption></figure>
+<p>Turbulence is flow characterized by recirculation, <a href="/wiki/Eddy_(fluid_dynamics)" title="Eddy (fluid dynamics)">eddies</a>, and apparent <a href="/wiki/Random" class="mw-redirect" title="Random">randomness</a>. Flow in which turbulence is not exhibited is called <a href="/wiki/Laminar_flow" title="Laminar flow">laminar</a>. The presence of eddies or recirculation alone does not necessarily indicate turbulent flow—these phenomena may be present in laminar flow as well. Mathematically, turbulent flow is often represented via a <a href="/wiki/Reynolds_decomposition" title="Reynolds decomposition">Reynolds decomposition</a>, in which the flow is broken down into the sum of an <a href="/wiki/Average" title="Average">average</a> component and a perturbation component.
+</p><p>It is believed that turbulent flows can be described well through the use of the <a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a>. <a href="/wiki/Direct_numerical_simulation" title="Direct numerical simulation">Direct numerical simulation</a> (DNS), based on the Navier–Stokes equations, makes it possible to simulate turbulent flows at moderate Reynolds numbers. Restrictions depend on the power of the computer used and the efficiency of the solution algorithm. The results of DNS have been found to agree well with experimental data for some flows.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>Most flows of interest have Reynolds numbers much too high for DNS to be a viable option,<sup id="cite_ref-pope_9-1" class="reference"><a href="#cite_note-pope-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup><sup class="reference nowrap"><span title="Page / location: 344">&#58;&#8202;344&#8202;</span></sup> given the state of computational power for the next few decades. Any flight vehicle large enough to carry a human (<span class="texhtml mvar" style="font-style:italic;">L</span> &gt; 3&#160;m), moving faster than 20&#160;m/s (72&#160;km/h; 45&#160;mph) is well beyond the limit of DNS simulation (<span class="texhtml mvar" style="font-style:italic;">Re</span> = 4&#160;million). Transport aircraft wings (such as on an <a href="/wiki/Airbus_A300" title="Airbus A300">Airbus A300</a> or <a href="/wiki/Boeing_747" title="Boeing 747">Boeing 747</a>) have Reynolds numbers of 40 million (based on the wing chord dimension). Solving these real-life flow problems requires turbulence models for the foreseeable future. <a href="/wiki/Reynolds-averaged_Navier%E2%80%93Stokes_equations" title="Reynolds-averaged Navier–Stokes equations">Reynolds-averaged Navier–Stokes equations</a> (RANS) combined with <a href="/wiki/Turbulence_modelling" class="mw-redirect" title="Turbulence modelling">turbulence modelling</a> provides a model of the effects of the turbulent flow. Such a modelling mainly provides the additional momentum transfer by the <a href="/wiki/Reynolds_stresses" class="mw-redirect" title="Reynolds stresses">Reynolds stresses</a>, although the turbulence also enhances the <a href="/wiki/Heat_transfer" title="Heat transfer">heat</a> and <a href="/wiki/Mass_transfer" title="Mass transfer">mass transfer</a>. Another promising methodology is <a href="/wiki/Large_eddy_simulation" title="Large eddy simulation">large eddy simulation</a> (LES), especially in the form of <a href="/wiki/Detached_eddy_simulation" title="Detached eddy simulation">detached eddy simulation</a> (DES) — a combination of LES and RANS turbulence modelling.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Other_approximations">Other approximations</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=9" title="Edit section: Other approximations"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>There are a large number of other possible approximations to fluid dynamic problems. Some of the more commonly used are listed below.
+</p>
+<ul><li>The <i><a href="/wiki/Boussinesq_approximation_(buoyancy)" title="Boussinesq approximation (buoyancy)">Boussinesq approximation</a></i> neglects variations in density except to calculate <a href="/wiki/Buoyancy" title="Buoyancy">buoyancy</a> forces. It is often used in free <a href="/wiki/Convection" title="Convection">convection</a> problems where density changes are small.</li>
+<li><i><a href="/wiki/Lubrication_theory" title="Lubrication theory">Lubrication theory</a></i> and <i><a href="/wiki/Hele%E2%80%93Shaw_flow" class="mw-redirect" title="Hele–Shaw flow">Hele–Shaw flow</a></i> exploits the large <a href="/wiki/Aspect_ratio" title="Aspect ratio">aspect ratio</a> of the domain to show that certain terms in the equations are small and so can be neglected.</li>
+<li><i><a href="/wiki/Slender-body_theory" title="Slender-body theory">Slender-body theory</a></i> is a methodology used in <a href="/wiki/Stokes_flow" title="Stokes flow">Stokes flow</a> problems to estimate the force on, or flow field around, a long slender object in a viscous fluid.</li>
+<li>The <i><a href="/wiki/Shallow-water_equations" class="mw-redirect" title="Shallow-water equations">shallow-water equations</a></i> can be used to describe a layer of relatively inviscid fluid with a <a href="/wiki/Free_surface" title="Free surface">free surface</a>, in which surface <a href="/wiki/Slope" title="Slope">gradients</a> are small.</li>
+<li><i><a href="/wiki/Darcy%27s_law" title="Darcy&#39;s law">Darcy's law</a></i> is used for flow in <a href="/wiki/Porous_medium" title="Porous medium">porous media</a>, and works with variables averaged over several pore-widths.</li>
+<li>In rotating systems, the <i><a href="/wiki/Quasi-geostrophic_equations" title="Quasi-geostrophic equations">quasi-geostrophic equations</a></i> assume an almost <a href="/wiki/Balanced_flow#Geostrophic_flow" title="Balanced flow">perfect balance</a> between <a href="/wiki/Pressure_gradient" title="Pressure gradient">pressure gradients</a> and the <a href="/wiki/Coriolis_force" title="Coriolis force">Coriolis force</a>. It is useful in the study of <a href="/wiki/Atmospheric_dynamics" class="mw-redirect" title="Atmospheric dynamics">atmospheric dynamics</a>.</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Multidisciplinary_types">Multidisciplinary types</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=10" title="Edit section: Multidisciplinary types"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Flows_according_to_Mach_regimes">Flows according to Mach regimes</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=11" title="Edit section: Flows according to Mach regimes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Mach_number" title="Mach number">Mach number</a></div>
+<p>While many flows (such as flow of water through a pipe) occur at low <a href="/wiki/Mach_number" title="Mach number">Mach numbers</a> (<a href="/wiki/Speed_of_sound" title="Speed of sound">subsonic</a> flows), many flows of practical interest in aerodynamics or in <a href="/wiki/Turbomachinery" title="Turbomachinery">turbomachines</a> occur at high fractions of <span class="texhtml"><a href="/wiki/Mach_number" title="Mach number"><i>M</i> = 1</a></span> (<a href="/wiki/Transonic" title="Transonic">transonic flows</a>) or in excess of it (<a href="/wiki/Supersonic_speed" title="Supersonic speed">supersonic</a> or even <a href="/wiki/Hypersonic_speed" title="Hypersonic speed">hypersonic flows</a>). New phenomena occur at these regimes such as instabilities in transonic flow, shock waves for supersonic flow, or non-equilibrium chemical behaviour due to ionization in hypersonic flows. In practice, each of those flow regimes is treated separately.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Reactive_versus_non-reactive_flows">Reactive versus non-reactive flows</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=12" title="Edit section: Reactive versus non-reactive flows"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Reactive flows are flows that are chemically reactive, which finds its applications in many areas, including <a href="/wiki/Combustion" title="Combustion">combustion</a> (<a href="/wiki/Internal_Combustion_Engine" class="mw-redirect" title="Internal Combustion Engine">IC engine</a>), <a href="/wiki/Propulsion" title="Propulsion">propulsion</a> devices (<a href="/wiki/Rockets" class="mw-redirect" title="Rockets">rockets</a>, <a href="/wiki/Jet_engines" class="mw-redirect" title="Jet engines">jet engines</a>, and so on), <a href="/wiki/Detonations" class="mw-redirect" title="Detonations">detonations</a>, fire and safety hazards, and astrophysics. In addition to conservation of mass, momentum and energy, conservation of individual species (for example, mass fraction of <a href="/wiki/Methane" title="Methane">methane</a> in methane combustion) need to be derived, where the production/depletion rate of any species are obtained by simultaneously solving the equations of <a href="/wiki/Chemical_kinetics" title="Chemical kinetics">chemical kinetics</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Magnetohydrodynamics">Magnetohydrodynamics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=13" title="Edit section: Magnetohydrodynamics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Magnetohydrodynamics" title="Magnetohydrodynamics">Magnetohydrodynamics</a></div>
+<p><a href="/wiki/Magnetohydrodynamics" title="Magnetohydrodynamics">Magnetohydrodynamics</a> is the multidisciplinary study of the flow of <a href="/wiki/Electrical_conduction" class="mw-redirect" title="Electrical conduction">electrically conducting</a> fluids in <a href="/wiki/Electromagnetism" title="Electromagnetism">electromagnetic</a> fields. Examples of such fluids include <a href="/wiki/Plasma_(physics)" title="Plasma (physics)">plasmas</a>, liquid metals, and <a href="/wiki/Saline_water" title="Saline water">salt water</a>. The fluid flow equations are solved simultaneously with <a href="/wiki/Maxwell%27s_equations" title="Maxwell&#39;s equations">Maxwell's equations</a> of electromagnetism.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Relativistic_fluid_dynamics">Relativistic fluid dynamics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=14" title="Edit section: Relativistic fluid dynamics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Relativistic fluid dynamics studies the macroscopic and microscopic fluid motion at large velocities comparable to the <a href="/wiki/Velocity_of_light" class="mw-redirect" title="Velocity of light">velocity of light</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup> This branch of fluid dynamics accounts for the relativistic effects both from the <a href="/wiki/Special_theory_of_relativity" class="mw-redirect" title="Special theory of relativity">special theory of relativity</a> and the <a href="/wiki/General_theory_of_relativity" class="mw-redirect" title="General theory of relativity">general theory of relativity</a>. The governing equations are derived in <a href="/wiki/Riemannian_geometry" title="Riemannian geometry">Riemannian geometry</a> for <a href="/wiki/Minkowski_spacetime" class="mw-redirect" title="Minkowski spacetime">Minkowski spacetime</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Fluctuating_hydrodynamics">Fluctuating hydrodynamics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=15" title="Edit section: Fluctuating hydrodynamics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>This branch of fluid dynamics augments the standard hydrodynamic equations with stochastic fluxes that model 
+thermal fluctuations.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup>
+As formulated by <a href="/wiki/Lev_Landau" title="Lev Landau">Landau</a> and <a href="/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz</a>,<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup>
+a <a href="/wiki/White_noise" title="White noise">white noise</a> contribution obtained from the <a href="/wiki/Fluctuation-dissipation_theorem" class="mw-redirect" title="Fluctuation-dissipation theorem">fluctuation-dissipation theorem</a> of <a href="/wiki/Statistical_mechanics" title="Statistical mechanics">statistical mechanics</a>
+is added to the <a href="/wiki/Viscous_stress_tensor" title="Viscous stress tensor">viscous stress tensor</a> and <a href="/wiki/Heat_flux" title="Heat flux">heat flux</a>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Terminology">Terminology</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=16" title="Edit section: Terminology"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The concept of pressure is central to the study of both fluid statics and fluid dynamics. A pressure can be identified for every point in a body of fluid, regardless of whether the fluid is in motion or not. Pressure can be <a href="/wiki/Pressure_measurement" title="Pressure measurement">measured</a> using an aneroid, Bourdon tube, mercury column, or various other methods.
+</p><p>Some of the terminology that is necessary in the study of fluid dynamics is not found in other similar areas of study. In particular, some of the terminology used in fluid dynamics is not used in <a href="/wiki/Fluid_statics" class="mw-redirect" title="Fluid statics">fluid statics</a>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Characteristic_numbers">Characteristic numbers</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=17" title="Edit section: Characteristic numbers"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="excerpt-block"><style data-mw-deduplicate="TemplateStyles:r1066933788">.mw-parser-output .excerpt-hat .mw-editsection-like{font-style:normal}</style><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable dablink excerpt-hat selfref">This section is an excerpt from <a href="/wiki/Dimensionless_numbers_in_fluid_mechanics" title="Dimensionless numbers in fluid mechanics">Dimensionless numbers in fluid mechanics</a>.<span class="mw-editsection-like plainlinks"><span class="mw-editsection-bracket">[</span><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Dimensionless_numbers_in_fluid_mechanics&amp;action=edit">edit</a><span class="mw-editsection-bracket">]</span></span></div><div class="excerpt">
+<p><i><a href="/wiki/Dimensionless_numbers" class="mw-redirect" title="Dimensionless numbers">Dimensionless numbers</a></i> (or <i>characteristic numbers</i>) have an important role in analyzing the behavior of <a href="/wiki/Fluid" title="Fluid">fluids</a> and their flow as well as in other <a href="/wiki/Transport_phenomena" title="Transport phenomena">transport phenomena</a>.<sup id="cite_ref-Dimensionless_numbers_in_fluid_mechanics_80000-1:2009_14-0" class="reference"><a href="#cite_note-Dimensionless_numbers_in_fluid_mechanics_80000-1:2009-14"><span class="cite-bracket">&#91;</span>14<span class="cite-bracket">&#93;</span></a></sup> They include the <a href="/wiki/Reynolds_number" title="Reynolds number">Reynolds</a> and the <a href="/wiki/Mach_number" title="Mach number">Mach numbers</a>, which describe as ratios the relative magnitude of fluid and physical system characteristics, such as <a href="/wiki/Density" title="Density">density</a>, <a href="/wiki/Viscosity" title="Viscosity">viscosity</a>, <a href="/wiki/Speed_of_sound" title="Speed of sound">speed of sound</a>, and <a href="/wiki/Velocity" title="Velocity">flow speed</a>.
+</p>
+To compare a real situation (e.g. an <a href="/wiki/Aircraft" title="Aircraft">aircraft</a>) with a small-scale model it is necessary to keep the important characteristic numbers the same. Names and formulation of these numbers were standardized in <a href="/wiki/ISO_31-12" class="mw-redirect" title="ISO 31-12">ISO 31-12</a> and in <a href="/wiki/ISO_80000-11" class="mw-redirect" title="ISO 80000-11">ISO 80000-11</a>.</div></div>
+<div class="mw-heading mw-heading3"><h3 id="Terminology_in_incompressible_fluid_dynamics">Terminology in incompressible fluid dynamics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=18" title="Edit section: Terminology in incompressible fluid dynamics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>The concepts of total pressure and <a href="/wiki/Dynamic_pressure" title="Dynamic pressure">dynamic pressure</a> arise from <a href="/wiki/Bernoulli%27s_equation" class="mw-redirect" title="Bernoulli&#39;s equation">Bernoulli's equation</a> and are significant in the study of all fluid flows. (These two pressures are not pressures in the usual sense—they cannot be measured using an aneroid, Bourdon tube or mercury column.) To avoid potential ambiguity when referring to pressure in fluid dynamics, many authors use the term <a href="/wiki/Static_pressure" title="Static pressure">static pressure</a> to distinguish it from total pressure and dynamic pressure. <a href="/wiki/Static_pressure" title="Static pressure">Static pressure</a> is identical to pressure and can be identified for every point in a fluid flow field.
+</p><p>A point in a fluid flow where the flow has come to rest (that is to say, speed is equal to zero adjacent to some solid body immersed in the fluid flow) is of special significance. It is of such importance that it is given a special name—a <a href="/wiki/Stagnation_point" title="Stagnation point">stagnation point</a>. The static pressure at the stagnation point is of special significance and is given its own name—<a href="/wiki/Stagnation_pressure" title="Stagnation pressure">stagnation pressure</a>. In incompressible flows, the stagnation pressure at a stagnation point is equal to the total pressure throughout the flow field.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Terminology_in_compressible_fluid_dynamics">Terminology in compressible fluid dynamics</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=19" title="Edit section: Terminology in compressible fluid dynamics"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>In a compressible fluid, it is convenient to define the total conditions (also called stagnation conditions) for all thermodynamic state properties (such as total temperature, total enthalpy, total speed of sound). These total flow conditions are a function of the fluid velocity and have different values in frames of reference with different motion.
+</p><p>To avoid potential ambiguity when referring to the properties of the fluid associated with the state of the fluid rather than its motion, the prefix "static" is commonly used (such as static temperature and static enthalpy). Where there is no prefix, the fluid property is the static condition (so "density" and "static density" mean the same thing). The static conditions are independent of the frame of reference.
+</p><p>Because the total flow conditions are defined by <a href="/wiki/Isentropic" class="mw-redirect" title="Isentropic">isentropically</a> bringing the fluid to rest, there is no need to distinguish between total entropy and static entropy as they are always equal by definition. As such, entropy is most commonly referred to as simply "entropy".
+</p>
+<div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=20" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236090951"><div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Outline_of_fluid_dynamics" title="Outline of fluid dynamics">Outline of fluid dynamics</a></div>
+<ul><li><a href="/wiki/List_of_publications_in_physics#Fluid_dynamics" class="mw-redirect" title="List of publications in physics">List of publications in fluid dynamics</a></li>
+<li><a href="/wiki/List_of_fluid_dynamicists" class="mw-redirect" title="List of fluid dynamicists">List of fluid dynamicists</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=21" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1239543626">.mw-parser-output .reflist{margin-bottom:0.5em;list-style-type:decimal}@media screen{.mw-parser-output .reflist{font-size:90%}}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1238218222">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFEckert2006" class="citation book cs1">Eckert, Michael (2006). <i>The Dawn of Fluid Dynamics: A Discipline Between Science and Technology</i>. Wiley. p.&#160;ix. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/3-527-40513-5" title="Special:BookSources/3-527-40513-5"><bdi>3-527-40513-5</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Dawn+of+Fluid+Dynamics%3A+A+Discipline+Between+Science+and+Technology&amp;rft.pages=ix&amp;rft.pub=Wiley&amp;rft.date=2006&amp;rft.isbn=3-527-40513-5&amp;rft.aulast=Eckert&amp;rft.aufirst=Michael&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-J.D._Anderson_2007-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-J.D._Anderson_2007_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-J.D._Anderson_2007_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAnderson2007" class="citation book cs1">Anderson, J. D. (2007). <i>Fundamentals of Aerodynamics</i> (4th&#160;ed.). London: McGraw–Hill. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-07-125408-3" title="Special:BookSources/978-0-07-125408-3"><bdi>978-0-07-125408-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fundamentals+of+Aerodynamics&amp;rft.place=London&amp;rft.edition=4th&amp;rft.pub=McGraw%E2%80%93Hill&amp;rft.date=2007&amp;rft.isbn=978-0-07-125408-3&amp;rft.aulast=Anderson&amp;rft.aufirst=J.+D.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">
+<link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFNangiaJohansenPatankarBhalla2017" class="citation journal cs1">Nangia, Nishant; Johansen, Hans; Patankar, Neelesh A.; Bhalla, Amneet Pal S. (2017). "A moving control volume approach to computing hydrodynamic forces and torques on immersed bodies". <i>Journal of Computational Physics</i>. <b>347</b>: 437–462. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://arxiv.org/abs/1704.00239">1704.00239</a></span>. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2017JCoPh.347..437N">2017JCoPh.347..437N</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.jcp.2017.06.047">10.1016/j.jcp.2017.06.047</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:37560541">37560541</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Computational+Physics&amp;rft.atitle=A+moving+control+volume+approach+to+computing+hydrodynamic+forces+and+torques+on+immersed+bodies&amp;rft.volume=347&amp;rft.pages=437-462&amp;rft.date=2017&amp;rft_id=info%3Aarxiv%2F1704.00239&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A37560541%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jcp.2017.06.047&amp;rft_id=info%3Abibcode%2F2017JCoPh.347..437N&amp;rft.aulast=Nangia&amp;rft.aufirst=Nishant&amp;rft.au=Johansen%2C+Hans&amp;rft.au=Patankar%2C+Neelesh+A.&amp;rft.au=Bhalla%2C+Amneet+Pal+S.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWhite1974" class="citation book cs1">White, F. M. (1974). <i>Viscous Fluid Flow</i>. New York: McGraw–Hill. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-069710-8" title="Special:BookSources/0-07-069710-8"><bdi>0-07-069710-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Viscous+Fluid+Flow&amp;rft.place=New+York&amp;rft.pub=McGraw%E2%80%93Hill&amp;rft.date=1974&amp;rft.isbn=0-07-069710-8&amp;rft.aulast=White&amp;rft.aufirst=F.+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFWilson2018" class="citation journal cs1">Wilson, DI (February 2018). <a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5811736">"What is Rheology?"</a>. <i>Eye</i>. <b>32</b> (2): 179–183. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1038%2Feye.2017.267">10.1038/eye.2017.267</a>. <a href="/wiki/PMC_(identifier)" class="mw-redirect" title="PMC (identifier)">PMC</a>&#160;<span class="id-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5811736">5811736</a></span>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="https://pubmed.ncbi.nlm.nih.gov/29271417">29271417</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Eye&amp;rft.atitle=What+is+Rheology%3F&amp;rft.volume=32&amp;rft.issue=2&amp;rft.pages=179-183&amp;rft.date=2018-02&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5811736%23id-name%3DPMC&amp;rft_id=info%3Apmid%2F29271417&amp;rft_id=info%3Adoi%2F10.1038%2Feye.2017.267&amp;rft.aulast=Wilson&amp;rft.aufirst=DI&amp;rft_id=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fpmc%2Farticles%2FPMC5811736&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPlatzer2006" class="citation journal cs1">Platzer, B. (2006-12-01). <a rel="nofollow" class="external text" href="https://dx.doi.org/10.1002/zamm.200690053">"Book Review: Cebeci, T. and Cousteix, J., Modeling and Computation of Boundary-Layer Flows"</a>. <i>ZAMM</i>. <b>86</b> (12): 981–982. <a href="/wiki/Bibcode_(identifier)" class="mw-redirect" title="Bibcode (identifier)">Bibcode</a>:<a rel="nofollow" class="external text" href="https://ui.adsabs.harvard.edu/abs/2006ZaMM...86..981P">2006ZaMM...86..981P</a>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1002%2Fzamm.200690053">10.1002/zamm.200690053</a>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="https://search.worldcat.org/issn/0044-2267">0044-2267</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=ZAMM&amp;rft.atitle=Book+Review%3A+Cebeci%2C+T.+and+Cousteix%2C+J.%2C+Modeling+and+Computation+of+Boundary-Layer+Flows&amp;rft.volume=86&amp;rft.issue=12&amp;rft.pages=981-982&amp;rft.date=2006-12-01&amp;rft.issn=0044-2267&amp;rft_id=info%3Adoi%2F10.1002%2Fzamm.200690053&amp;rft_id=info%3Abibcode%2F2006ZaMM...86..981P&amp;rft.aulast=Platzer&amp;rft.aufirst=B.&amp;rft_id=http%3A%2F%2Fdx.doi.org%2F10.1002%2Fzamm.200690053&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Shengtai Li, Hui Li "Parallel AMR Code for Compressible MHD or HD Equations" (Los Alamos National Laboratory) <a rel="nofollow" class="external autonumber" href="http://math.lanl.gov/Research/Highlights/amrmhd.shtml">[1]</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160303182548/http://math.lanl.gov/Research/Highlights/amrmhd.shtml">Archived</a> 2016-03-03 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.cfd-online.com/Forums/main/118306-transient-state-unsteady-state.html">"Transient state or unsteady state? -- CFD Online Discussion Forums"</a>. <i>www.cfd-online.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=www.cfd-online.com&amp;rft.atitle=Transient+state+or+unsteady+state%3F+--+CFD+Online+Discussion+Forums&amp;rft_id=https%3A%2F%2Fwww.cfd-online.com%2FForums%2Fmain%2F118306-transient-state-unsteady-state.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-pope-9"><span class="mw-cite-backlink">^ <a href="#cite_ref-pope_9-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-pope_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFPope2000" class="citation book cs1">Pope, Stephen B. (2000). <i>Turbulent Flows</i>. Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-59886-9" title="Special:BookSources/0-521-59886-9"><bdi>0-521-59886-9</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Turbulent+Flows&amp;rft.pub=Cambridge+University+Press&amp;rft.date=2000&amp;rft.isbn=0-521-59886-9&amp;rft.aulast=Pope&amp;rft.aufirst=Stephen+B.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">See, for example, Schlatter et al, Phys. Fluids 21, 051702 (2009); <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1063%2F1.3139294">10.1063/1.3139294</a></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFLandauLifshitz1987" class="citation book cs1"><a href="/wiki/Lev_Landau" title="Lev Landau">Landau, Lev Davidovich</a>; <a href="/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz, Evgenii Mikhailovich</a> (1987). <i>Fluid Mechanics</i>. London: Pergamon. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-08-033933-6" title="Special:BookSources/0-08-033933-6"><bdi>0-08-033933-6</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fluid+Mechanics&amp;rft.place=London&amp;rft.pub=Pergamon&amp;rft.date=1987&amp;rft.isbn=0-08-033933-6&amp;rft.aulast=Landau&amp;rft.aufirst=Lev+Davidovich&amp;rft.au=Lifshitz%2C+Evgenii+Mikhailovich&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFOrtiz_de_ZarateSengers2006" class="citation book cs1">Ortiz de Zarate, Jose M.; Sengers, Jan V. (2006). <i>Hydrodynamic Fluctuations in Fluids and Fluid Mixtures</i>. Amsterdam: Elsevier.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Hydrodynamic+Fluctuations+in+Fluids+and+Fluid+Mixtures&amp;rft.place=Amsterdam&amp;rft.pub=Elsevier&amp;rft.date=2006&amp;rft.aulast=Ortiz+de+Zarate&amp;rft.aufirst=Jose+M.&amp;rft.au=Sengers%2C+Jan+V.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFLandauLifshitz1959" class="citation book cs1"><a href="/wiki/Lev_Landau" title="Lev Landau">Landau, Lev Davidovich</a>; <a href="/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz, Evgenii Mikhailovich</a> (1959). <i>Fluid Mechanics</i>. London: Pergamon.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fluid+Mechanics&amp;rft.place=London&amp;rft.pub=Pergamon&amp;rft.date=1959&amp;rft.aulast=Landau&amp;rft.aufirst=Lev+Davidovich&amp;rft.au=Lifshitz%2C+Evgenii+Mikhailovich&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Dimensionless_numbers_in_fluid_mechanics_80000-1:2009-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-Dimensionless_numbers_in_fluid_mechanics_80000-1:2009_14-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://www.iso.org/standard/30669.html">"ISO 80000-1:2009"</a>. <a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">International Organization for Standardization</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2019-09-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=ISO+80000-1%3A2009&amp;rft.pub=International+Organization+for+Standardization&amp;rft_id=https%3A%2F%2Fwww.iso.org%2Fstandard%2F30669.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Further_reading">Further reading</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=22" title="Edit section: Further reading"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFAcheson1990" class="citation book cs1">Acheson, D. J. (1990). <i>Elementary Fluid Dynamics</i>. Clarendon Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-19-859679-0" title="Special:BookSources/0-19-859679-0"><bdi>0-19-859679-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elementary+Fluid+Dynamics&amp;rft.pub=Clarendon+Press&amp;rft.date=1990&amp;rft.isbn=0-19-859679-0&amp;rft.aulast=Acheson&amp;rft.aufirst=D.+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFBatchelor1967" class="citation book cs1"><a href="/wiki/George_Batchelor" title="George Batchelor">Batchelor, G. K.</a> (1967). <i>An Introduction to Fluid Dynamics</i>. Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-66396-2" title="Special:BookSources/0-521-66396-2"><bdi>0-521-66396-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Fluid+Dynamics&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1967&amp;rft.isbn=0-521-66396-2&amp;rft.aulast=Batchelor&amp;rft.aufirst=G.+K.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFChanson2009" class="citation book cs1"><a href="/wiki/Hubert_Chanson" title="Hubert Chanson">Chanson, H.</a> (2009). <i>Applied Hydrodynamics: An Introduction to Ideal and Real Fluid Flows</i>. CRC Press, Taylor &amp; Francis Group, Leiden, The Netherlands, 478 pages. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-415-49271-3" title="Special:BookSources/978-0-415-49271-3"><bdi>978-0-415-49271-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Applied+Hydrodynamics%3A+An+Introduction+to+Ideal+and+Real+Fluid+Flows&amp;rft.pub=CRC+Press%2C+Taylor+%26+Francis+Group%2C+Leiden%2C+The+Netherlands%2C+478+pages&amp;rft.date=2009&amp;rft.isbn=978-0-415-49271-3&amp;rft.aulast=Chanson&amp;rft.aufirst=H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFClancy1975" class="citation book cs1"><a href="/wiki/Laurence_Clancy" title="Laurence Clancy">Clancy, L. J.</a> (1975). <i>Aerodynamics</i>. London: Pitman Publishing Limited. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-273-01120-0" title="Special:BookSources/0-273-01120-0"><bdi>0-273-01120-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Aerodynamics&amp;rft.place=London&amp;rft.pub=Pitman+Publishing+Limited&amp;rft.date=1975&amp;rft.isbn=0-273-01120-0&amp;rft.aulast=Clancy&amp;rft.aufirst=L.+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFLamb1994" class="citation book cs1"><a href="/wiki/Horace_Lamb" title="Horace Lamb">Lamb, Horace</a> (1994). <i>Hydrodynamics</i> (6th&#160;ed.). Cambridge University Press. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-45868-4" title="Special:BookSources/0-521-45868-4"><bdi>0-521-45868-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Hydrodynamics&amp;rft.edition=6th&amp;rft.pub=Cambridge+University+Press&amp;rft.date=1994&amp;rft.isbn=0-521-45868-4&amp;rft.aulast=Lamb&amp;rft.aufirst=Horace&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span> Originally published in 1879, the 6th extended edition appeared first in 1932.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFMilne-Thompson1968" class="citation book cs1">Milne-Thompson, L. M. (1968). <i>Theoretical Hydrodynamics</i> (5th&#160;ed.). Macmillan.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Theoretical+Hydrodynamics&amp;rft.edition=5th&amp;rft.pub=Macmillan&amp;rft.date=1968&amp;rft.aulast=Milne-Thompson&amp;rft.aufirst=L.+M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span> Originally published in 1938.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFShinbrot1973" class="citation book cs1">Shinbrot, M. (1973). <i>Lectures on Fluid Mechanics</i>. Gordon and Breach. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-677-01710-3" title="Special:BookSources/0-677-01710-3"><bdi>0-677-01710-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Lectures+on+Fluid+Mechanics&amp;rft.pub=Gordon+and+Breach&amp;rft.date=1973&amp;rft.isbn=0-677-01710-3&amp;rft.aulast=Shinbrot&amp;rft.aufirst=M.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><cite id="CITEREFNazarenko2014" class="citation cs2">Nazarenko, Sergey (2014), <i>Fluid Dynamics via Examples and Solutions</i>, CRC Press (Taylor &amp; Francis group), <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-43-988882-7" title="Special:BookSources/978-1-43-988882-7"><bdi>978-1-43-988882-7</bdi></a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Fluid+Dynamics+via+Examples+and+Solutions&amp;rft.pub=CRC+Press+%28Taylor+%26+Francis+group%29&amp;rft.date=2014&amp;rft.isbn=978-1-43-988882-7&amp;rft.aulast=Nazarenko&amp;rft.aufirst=Sergey&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFluid+dynamics" class="Z3988"></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.scholarpedia.org/article/Encyclopedia:Fluid_dynamics">Encyclopedia: Fluid dynamics</a> <a href="/wiki/Scholarpedia" title="Scholarpedia">Scholarpedia</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Fluid_dynamics&amp;action=edit&amp;section=23" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r1235681985">.mw-parser-output .side-box{margin:4px 0;box-sizing:border-box;border:1px solid #aaa;font-size:88%;line-height:1.25em;background-color:var(--background-color-interactive-subtle,#f8f9fa);display:flow-root}.mw-parser-output .side-box-abovebelow,.mw-parser-output .side-box-text{padding:0.25em 0.9em}.mw-parser-output .side-box-image{padding:2px 0 2px 0.9em;text-align:center}.mw-parser-output .side-box-imageright{padding:2px 0.9em 2px 0;text-align:center}@media(min-width:500px){.mw-parser-output .side-box-flex{display:flex;align-items:center}.mw-parser-output .side-box-text{flex:1;min-width:0}}@media(min-width:720px){.mw-parser-output .side-box{width:238px}.mw-parser-output .side-box-right{clear:right;float:right;margin-left:1em}.mw-parser-output .side-box-left{margin-right:1em}}</style><style data-mw-deduplicate="TemplateStyles:r1237033735">@media print{body.ns-0 .mw-parser-output .sistersitebox{display:none!important}}@media screen{html.skin-theme-clientpref-night .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .sistersitebox img[src*="Wiktionary-logo-en-v2.svg"]{background-color:white}}</style><div class="side-box side-box-right plainlinks sistersitebox"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1126788409">
+<div class="side-box-flex">
+<div class="side-box-image"><span class="noviewer" typeof="mw:File"><span><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span></span></div>
+<div class="side-box-text plainlist">Wikimedia Commons has media related to <span style="font-weight: bold; font-style: italic;"><a href="https://commons.wikimedia.org/wiki/Category:Fluid_dynamics" class="extiw" title="commons:Category:Fluid dynamics">Fluid dynamics</a></span>.</div></div>
+</div>
+<ul><li><a rel="nofollow" class="external text" href="http://web.mit.edu/hml/ncfmf.html">National Committee for Fluid Mechanics Films (NCFMF)</a>, containing films on several subjects in fluid dynamics (in <a href="/wiki/RealMedia" title="RealMedia">RealMedia</a> format)</li>
+<li><a rel="nofollow" class="external text" href="https://gfm.aps.org/">Gallery of fluid motion</a>, "a visual record of the aesthetic and science of contemporary fluid mechanics," from the <a href="/wiki/American_Physical_Society" title="American Physical Society">American Physical Society</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.iist.ac.in/sites/default/files/people/fm_books.html">List of Fluid Dynamics books</a></li></ul>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><style data-mw-deduplicate="TemplateStyles:r1236075235">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}body.skin--responsive .mw-parser-output .navbox-image img{max-width:none!important}@media print{body.ns-0 .mw-parser-output .navbox{display:none!important}}</style></div><div role="navigation" class="navbox" aria-labelledby="Fluid_mechanics" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Fluid_Mechanics" title="Template:Fluid Mechanics"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Fluid_Mechanics" title="Template talk:Fluid Mechanics"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Fluid_Mechanics" title="Special:EditPage/Template:Fluid Mechanics"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Fluid_mechanics" style="font-size:114%;margin:0 4em"><a href="/wiki/Fluid_mechanics" title="Fluid mechanics">Fluid mechanics</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Fluid_statics" class="mw-redirect" title="Fluid statics">Fluid statics</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hydraulics" title="Hydraulics">Hydraulics</a></li>
+<li><a href="/wiki/Archimedes%27_principle" title="Archimedes&#39; principle">Archimedes' principle</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a class="mw-selflink selflink">Fluid dynamics</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Computational_fluid_dynamics" title="Computational fluid dynamics">Computational fluid dynamics</a></li>
+<li><a href="/wiki/Aerodynamics" title="Aerodynamics">Aerodynamics</a></li>
+<li><a href="/wiki/Navier%E2%80%93Stokes_equations" title="Navier–Stokes equations">Navier–Stokes equations</a></li>
+<li><a href="/wiki/Boundary_layer" title="Boundary layer">Boundary layer</a>
+<ul><li><a href="/wiki/Entrance_length_(fluid_dynamics)" title="Entrance length (fluid dynamics)">Entrance length</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Dimensionless_numbers_in_fluid_mechanics" title="Dimensionless numbers in fluid mechanics">Dimensionless numbers</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Archimedes_number" title="Archimedes number">Archimedes</a></li>
+<li><a href="/wiki/Atwood_number" title="Atwood number">Atwood</a></li>
+<li><a href="/wiki/Bagnold_number" title="Bagnold number">Bagnold</a></li>
+<li><a href="/wiki/Bejan_number#Fluid_mechanics_and_heat_transfer" title="Bejan number">Bejan</a></li>
+<li><a href="/wiki/Biot_number" title="Biot number">Biot</a></li>
+<li><a href="/wiki/E%C3%B6tv%C3%B6s_number" title="Eötvös number">Bond</a></li>
+<li><a href="/wiki/Brinkman_number" title="Brinkman number">Brinkman</a></li>
+<li><a href="/wiki/Capillary_number" title="Capillary number">Capillary</a></li>
+<li><a href="/wiki/Cauchy_number" title="Cauchy number">Cauchy</a></li>
+<li><a href="/wiki/Chandrasekhar_number" title="Chandrasekhar number">Chandrasekhar</a></li>
+<li><a href="/wiki/Damk%C3%B6hler_numbers" title="Damköhler numbers">Damköhler</a></li>
+<li><a href="/wiki/Darcy_number" title="Darcy number">Darcy</a></li>
+<li><a href="/wiki/Dean_number" title="Dean number">Dean</a></li>
+<li><a href="/wiki/Deborah_number" title="Deborah number">Deborah</a></li>
+<li><a href="/wiki/Dukhin_number" title="Dukhin number">Dukhin</a></li>
+<li><a href="/wiki/Eckert_number" title="Eckert number">Eckert</a></li>
+<li><a href="/wiki/Ekman_number" title="Ekman number">Ekman</a></li>
+<li><a href="/wiki/E%C3%B6tv%C3%B6s_number" title="Eötvös number">Eötvös</a></li>
+<li><a href="/wiki/Euler_number_(physics)" title="Euler number (physics)">Euler</a></li>
+<li><a href="/wiki/Froude_number" title="Froude number">Froude</a></li>
+<li><a href="/wiki/Galilei_number" title="Galilei number">Galilei</a></li>
+<li><a href="/wiki/Graetz_number" title="Graetz number">Graetz</a></li>
+<li><a href="/wiki/Grashof_number" title="Grashof number">Grashof</a></li>
+<li><a href="/wiki/G%C3%B6rtler_vortices" title="Görtler vortices">Görtler</a></li>
+<li><a href="/wiki/Hagen_number" title="Hagen number">Hagen</a></li>
+<li><a href="/wiki/Iribarren_number" title="Iribarren number">Iribarren</a></li>
+<li><a href="/wiki/Kapitza_number" title="Kapitza number">Kapitza</a></li>
+<li><a href="/wiki/Keulegan%E2%80%93Carpenter_number" title="Keulegan–Carpenter number">Keulegan–Carpenter</a></li>
+<li><a href="/wiki/Knudsen_number" title="Knudsen number">Knudsen</a></li>
+<li><a href="/wiki/Laplace_number" title="Laplace number">Laplace</a></li>
+<li><a href="/wiki/Lewis_number" title="Lewis number">Lewis</a></li>
+<li><a href="/wiki/Mach_number" title="Mach number">Mach</a></li>
+<li><a href="/wiki/Marangoni_number" title="Marangoni number"> Marangoni</a></li>
+<li><a href="/wiki/Morton_number" title="Morton number">Morton</a></li>
+<li><a href="/wiki/Nusselt_number" title="Nusselt number">Nusselt</a></li>
+<li><a href="/wiki/Ohnesorge_number" title="Ohnesorge number">Ohnesorge</a></li>
+<li><a href="/wiki/P%C3%A9clet_number" title="Péclet number">Péclet</a></li>
+<li><a href="/wiki/Prandtl_number" title="Prandtl number">Prandtl</a>
+<ul><li><a href="/wiki/Magnetic_Prandtl_number" title="Magnetic Prandtl number">magnetic</a></li>
+<li><a href="/wiki/Turbulent_Prandtl_number" title="Turbulent Prandtl number">turbulent</a></li></ul></li>
+<li><a href="/wiki/Rayleigh_number" title="Rayleigh number">Rayleigh</a></li>
+<li><a href="/wiki/Reynolds_number" title="Reynolds number">Reynolds</a>
+<ul><li><a href="/wiki/Magnetic_Reynolds_number" title="Magnetic Reynolds number">magnetic</a></li></ul></li>
+<li><a href="/wiki/Richardson_number" title="Richardson number">Richardson</a></li>
+<li><a href="/wiki/Roshko_number" title="Roshko number">Roshko</a></li>
+<li><a href="/wiki/Rossby_number" title="Rossby number">Rossby</a></li>
+<li><a href="/wiki/Rouse_number" title="Rouse number">Rouse</a></li>
+<li><a href="/wiki/Schmidt_number" title="Schmidt number">Schmidt</a></li>
+<li><a href="/wiki/Scruton_number" title="Scruton number">Scruton</a></li>
+<li><a href="/wiki/Sherwood_number" title="Sherwood number">Sherwood</a></li>
+<li><a href="/wiki/Shields_parameter" title="Shields parameter">Shields</a></li>
+<li><a href="/wiki/Stanton_number" title="Stanton number">Stanton</a></li>
+<li><a href="/wiki/Stokes_number" title="Stokes number">Stokes</a></li>
+<li><a href="/wiki/Strouhal_number" title="Strouhal number">Strouhal</a></li>
+<li><a href="/wiki/Stuart_number" title="Stuart number">Stuart</a></li>
+<li><a href="/wiki/Laplace_number" title="Laplace number">Suratman</a></li>
+<li><a href="/wiki/Taylor_number" title="Taylor number">Taylor</a></li>
+<li><a href="/wiki/Ursell_number" title="Ursell number">Ursell</a></li>
+<li><a href="/wiki/Weber_number" title="Weber number">Weber</a></li>
+<li><a href="/wiki/Weissenberg_number" title="Weissenberg number">Weissenberg</a></li>
+<li><a href="/wiki/Womersley_number" title="Womersley number">Womersley</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"></div><div role="navigation" class="navbox" aria-labelledby="Major_branches_of_physics" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Branches_of_physics" title="Template:Branches of physics"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Branches_of_physics" title="Template talk:Branches of physics"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Branches_of_physics" title="Special:EditPage/Template:Branches of physics"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Major_branches_of_physics" style="font-size:114%;margin:0 4em">Major <a href="/wiki/Branches_of_physics" title="Branches of physics">branches of physics</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Divisions</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Basic_research" title="Basic research">Pure</a></li>
+<li><a href="/wiki/Applied_physics" title="Applied physics">Applied</a>
+<ul><li><a href="/wiki/Engineering_physics" title="Engineering physics">Engineering</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Approaches</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Experimental_physics" title="Experimental physics">Experimental</a></li>
+<li><a href="/wiki/Theoretical_physics" title="Theoretical physics">Theoretical</a>
+<ul><li><a href="/wiki/Computational_physics" title="Computational physics">Computational</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Classical_physics" title="Classical physics">Classical</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Classical_mechanics" title="Classical mechanics">Classical mechanics</a>
+<ul><li><a href="/wiki/Newton%27s_laws_of_motion" title="Newton&#39;s laws of motion">Newtonian</a></li>
+<li><a href="/wiki/Analytical_mechanics" title="Analytical mechanics">Analytical</a></li>
+<li><a href="/wiki/Celestial_mechanics" title="Celestial mechanics">Celestial</a></li>
+<li><a href="/wiki/Continuum_mechanics" title="Continuum mechanics">Continuum</a></li></ul></li>
+<li><a href="/wiki/Acoustics" title="Acoustics">Acoustics</a></li>
+<li><a href="/wiki/Classical_electromagnetism" title="Classical electromagnetism">Classical electromagnetism</a></li>
+<li><a href="/wiki/Classical_optics" class="mw-redirect" title="Classical optics">Classical optics</a>
+<ul><li><a href="/wiki/Geometrical_optics" title="Geometrical optics">Ray</a></li>
+<li><a href="/wiki/Physical_optics" title="Physical optics">Wave</a></li></ul></li>
+<li><a href="/wiki/Thermodynamics" title="Thermodynamics">Thermodynamics</a>
+<ul><li><a href="/wiki/Statistical_mechanics" title="Statistical mechanics">Statistical</a></li>
+<li><a href="/wiki/Non-equilibrium_thermodynamics" title="Non-equilibrium thermodynamics">Non-equilibrium</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Modern_physics" title="Modern physics">Modern</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Relativistic_mechanics" title="Relativistic mechanics">Relativistic mechanics</a>
+<ul><li><a href="/wiki/Special_relativity" title="Special relativity">Special</a></li>
+<li><a href="/wiki/General_relativity" title="General relativity">General</a></li></ul></li>
+<li><a href="/wiki/Nuclear_physics" title="Nuclear physics">Nuclear physics</a></li>
+<li><a href="/wiki/Quantum_mechanics" title="Quantum mechanics">Quantum mechanics</a></li>
+<li><a href="/wiki/Particle_physics" title="Particle physics">Particle physics</a></li>
+<li><a href="/wiki/Atomic,_molecular,_and_optical_physics" title="Atomic, molecular, and optical physics">Atomic, molecular, and optical physics</a>
+<ul><li><a href="/wiki/Atomic_physics" title="Atomic physics">Atomic</a></li>
+<li><a href="/wiki/Molecular_physics" title="Molecular physics">Molecular</a></li>
+<li><a href="/wiki/Optics#Modern_optics" title="Optics">Modern optics</a></li></ul></li>
+<li><a href="/wiki/Condensed_matter_physics" title="Condensed matter physics">Condensed matter physics</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Category:Applied_and_interdisciplinary_physics" title="Category:Applied and interdisciplinary physics">Interdisciplinary</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Astrophysics" title="Astrophysics">Astrophysics</a></li>
+<li><a href="/wiki/Atmospheric_physics" title="Atmospheric physics">Atmospheric physics</a></li>
+<li><a href="/wiki/Biophysics" title="Biophysics">Biophysics</a></li>
+<li><a href="/wiki/Chemical_physics" title="Chemical physics">Chemical physics</a></li>
+<li><a href="/wiki/Geophysics" title="Geophysics">Geophysics</a></li>
+<li><a href="/wiki/Materials_science" title="Materials science">Materials science</a></li>
+<li><a href="/wiki/Mathematical_physics" title="Mathematical physics">Mathematical physics</a></li>
+<li><a href="/wiki/Medical_physics" title="Medical physics">Medical physics</a></li>
+<li><a href="/wiki/Physical_oceanography" title="Physical oceanography">Ocean physics</a></li>
+<li><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/History_of_physics" title="History of physics">History of physics</a></li>
+<li><a href="/wiki/Nobel_Prize_in_Physics" title="Nobel Prize in Physics">Nobel Prize in Physics</a></li>
+<li><a href="/wiki/Philosophy_of_physics" title="Philosophy of physics">Philosophy of physics</a></li>
+<li><a href="/wiki/Physics_education" title="Physics education">Physics education</a></li>
+<li><a href="/wiki/Timeline_of_fundamental_physics_discoveries" title="Timeline of fundamental physics discoveries">Timeline of physics discoveries</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"></div><div role="navigation" class="navbox" aria-labelledby="Heating,_ventilation,_and_air_conditioning" style="vertical-align: middle;;padding:3px"><table class="nowraplinks mw-collapsible mw-collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:HVAC" title="Template:HVAC"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:HVAC" title="Template talk:HVAC"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:HVAC" title="Special:EditPage/Template:HVAC"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Heating,_ventilation,_and_air_conditioning" style="font-size:114%;margin:0 4em"><a href="/wiki/Heating,_ventilation,_and_air_conditioning" title="Heating, ventilation, and air conditioning">Heating, ventilation, and air conditioning</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Fundamental <br />concepts</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Air_changes_per_hour" title="Air changes per hour">Air changes per hour</a></li>
+<li><a href="/wiki/Bake-out" title="Bake-out">Bake-out</a></li>
+<li><a href="/wiki/Building_envelope" title="Building envelope">Building envelope</a></li>
+<li><a href="/wiki/Convection" title="Convection">Convection</a></li>
+<li><a href="/wiki/Dilution_(equation)" title="Dilution (equation)">Dilution</a></li>
+<li><a href="/wiki/Domestic_energy_consumption" title="Domestic energy consumption">Domestic energy consumption</a></li>
+<li><a href="/wiki/Enthalpy" title="Enthalpy">Enthalpy</a></li>
+<li><a class="mw-selflink selflink">Fluid dynamics</a></li>
+<li><a href="/wiki/Gas_compressor" class="mw-redirect" title="Gas compressor">Gas compressor</a></li>
+<li><a href="/wiki/Heat_pump_and_refrigeration_cycle" title="Heat pump and refrigeration cycle">Heat pump and refrigeration cycle</a></li>
+<li><a href="/wiki/Heat_transfer" title="Heat transfer">Heat transfer</a></li>
+<li><a href="/wiki/Humidity" title="Humidity">Humidity</a></li>
+<li><a href="/wiki/Infiltration_(HVAC)" title="Infiltration (HVAC)">Infiltration</a></li>
+<li><a href="/wiki/Latent_heat" title="Latent heat">Latent heat</a></li>
+<li><a href="/wiki/Noise_control" title="Noise control">Noise control</a></li>
+<li><a href="/wiki/Outgassing" title="Outgassing">Outgassing</a></li>
+<li><a href="/wiki/Particulates" title="Particulates">Particulates</a></li>
+<li><a href="/wiki/Psychrometrics" title="Psychrometrics">Psychrometrics</a></li>
+<li><a href="/wiki/Sensible_heat" title="Sensible heat">Sensible heat</a></li>
+<li><a href="/wiki/Stack_effect" title="Stack effect">Stack effect</a></li>
+<li><a href="/wiki/Thermal_comfort" title="Thermal comfort">Thermal comfort</a></li>
+<li><a href="/wiki/Thermal_destratification" title="Thermal destratification">Thermal destratification</a></li>
+<li><a href="/wiki/Thermal_mass" title="Thermal mass">Thermal mass</a></li>
+<li><a href="/wiki/Thermodynamics" title="Thermodynamics">Thermodynamics</a></li>
+<li><a href="/wiki/Vapour_pressure_of_water" title="Vapour pressure of water">Vapour pressure of water</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Technology</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Absorption-compression_heat_pump" title="Absorption-compression heat pump">Absorption-compression heat pump</a></li>
+<li><a href="/wiki/Absorption_refrigerator" title="Absorption refrigerator">Absorption refrigerator</a></li>
+<li><a href="/wiki/Air_barrier" title="Air barrier">Air barrier</a></li>
+<li><a href="/wiki/Air_conditioning" title="Air conditioning">Air conditioning</a></li>
+<li><a href="/wiki/Antifreeze" title="Antifreeze">Antifreeze</a></li>
+<li><a href="/wiki/Automobile_air_conditioning" class="mw-redirect" title="Automobile air conditioning">Automobile air conditioning</a></li>
+<li><a href="/wiki/Autonomous_building" title="Autonomous building">Autonomous building</a></li>
+<li><a href="/wiki/Building_insulation_material" title="Building insulation material">Building insulation materials</a></li>
+<li><a href="/wiki/Central_heating" title="Central heating">Central heating</a></li>
+<li><a href="/wiki/Central_solar_heating" title="Central solar heating">Central solar heating</a></li>
+<li><a href="/wiki/Chilled_beam" title="Chilled beam">Chilled beam</a></li>
+<li><a href="/wiki/Chilled_water" title="Chilled water">Chilled water</a></li>
+<li><a href="/wiki/Constant_air_volume" title="Constant air volume">Constant air volume</a> (CAV)</li>
+<li><a href="/wiki/Coolant" title="Coolant">Coolant</a></li>
+<li><a href="/wiki/Cross_ventilation" title="Cross ventilation">Cross ventilation</a></li>
+<li><a href="/wiki/Dedicated_outdoor_air_system" title="Dedicated outdoor air system">Dedicated outdoor air system</a> (DOAS)</li>
+<li><a href="/wiki/Deep_water_source_cooling" title="Deep water source cooling">Deep water source cooling</a></li>
+<li><a href="/wiki/Demand_controlled_ventilation" title="Demand controlled ventilation">Demand controlled ventilation</a> (DCV)</li>
+<li><a href="/wiki/Displacement_ventilation" title="Displacement ventilation">Displacement ventilation</a></li>
+<li><a href="/wiki/District_cooling" title="District cooling">District cooling</a></li>
+<li><a href="/wiki/District_heating" title="District heating">District heating</a></li>
+<li><a href="/wiki/Electric_heating" title="Electric heating">Electric heating</a></li>
+<li><a href="/wiki/Energy_recovery_ventilation" class="mw-redirect" title="Energy recovery ventilation">Energy recovery ventilation</a> (ERV)</li>
+<li><a href="/wiki/Firestop" title="Firestop">Firestop</a></li>
+<li><a href="/wiki/Forced-air" title="Forced-air">Forced-air</a></li>
+<li><a href="/wiki/Forced-air_gas" title="Forced-air gas">Forced-air gas</a></li>
+<li><a href="/wiki/Free_cooling" title="Free cooling">Free cooling</a></li>
+<li><a href="/wiki/Heat_recovery_ventilation" title="Heat recovery ventilation">Heat recovery ventilation</a> (HRV)</li>
+<li><a href="/wiki/Hybrid_heat" title="Hybrid heat">Hybrid heat</a></li>
+<li><a href="/wiki/Hydronics" title="Hydronics">Hydronics</a></li>
+<li><a href="/wiki/Ice_storage_air_conditioning" title="Ice storage air conditioning">Ice storage air conditioning</a></li>
+<li><a href="/wiki/Kitchen_ventilation" title="Kitchen ventilation">Kitchen ventilation</a></li>
+<li><a href="/wiki/Mixed-mode_ventilation" title="Mixed-mode ventilation">Mixed-mode ventilation</a></li>
+<li><a href="/wiki/Microgeneration" title="Microgeneration">Microgeneration</a></li>
+<li><a href="/wiki/Passive_cooling" title="Passive cooling">Passive cooling</a></li>
+<li><a href="/wiki/Passive_daytime_radiative_cooling" title="Passive daytime radiative cooling">Passive daytime radiative cooling</a></li>
+<li><a href="/wiki/Passive_house" title="Passive house">Passive house</a></li>
+<li><a href="/wiki/Passive_ventilation" title="Passive ventilation">Passive ventilation</a></li>
+<li><a href="/wiki/Radiant_heating_and_cooling" title="Radiant heating and cooling">Radiant heating and cooling</a></li>
+<li><a href="/wiki/Radiant_cooling" class="mw-redirect" title="Radiant cooling">Radiant cooling</a></li>
+<li><a href="/wiki/Radiant_heating" class="mw-redirect" title="Radiant heating">Radiant heating</a></li>
+<li><a href="/wiki/Radon_mitigation" title="Radon mitigation">Radon mitigation</a></li>
+<li><a href="/wiki/Refrigeration" title="Refrigeration">Refrigeration</a></li>
+<li><a href="/wiki/Renewable_heat" title="Renewable heat">Renewable heat</a></li>
+<li><a href="/wiki/Room_air_distribution" title="Room air distribution">Room air distribution</a></li>
+<li><a href="/wiki/Solar_air_heat" title="Solar air heat">Solar air heat</a></li>
+<li><a href="/wiki/Solar_combisystem" title="Solar combisystem">Solar combisystem</a></li>
+<li><a href="/wiki/Solar_cooling" class="mw-redirect" title="Solar cooling">Solar cooling</a></li>
+<li><a href="/wiki/Solar_heating" class="mw-redirect" title="Solar heating">Solar heating</a></li>
+<li><a href="/wiki/Thermal_insulation" title="Thermal insulation">Thermal insulation</a></li>
+<li><a href="/wiki/Thermosiphon" title="Thermosiphon">Thermosiphon</a></li>
+<li><a href="/wiki/Underfloor_air_distribution" title="Underfloor air distribution">Underfloor air distribution</a></li>
+<li><a href="/wiki/Underfloor_heating" title="Underfloor heating">Underfloor heating</a></li>
+<li><a href="/wiki/Vapor_barrier" title="Vapor barrier">Vapor barrier</a></li>
+<li><a href="/wiki/Vapor-compression_refrigeration" title="Vapor-compression refrigeration">Vapor-compression refrigeration</a> (VCRS)</li>
+<li><a href="/wiki/Variable_air_volume" title="Variable air volume">Variable air volume</a> (VAV)</li>
+<li><a href="/wiki/Variable_refrigerant_flow" title="Variable refrigerant flow">Variable refrigerant flow</a> (VRF)</li>
+<li><a href="/wiki/Ventilation_(architecture)" title="Ventilation (architecture)">Ventilation</a></li>
+<li><a href="/wiki/Water_heat_recycling" title="Water heat recycling">Water heat recycling</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Components</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Air_conditioner_inverter" class="mw-redirect" title="Air conditioner inverter">Air conditioner inverter</a></li>
+<li><a href="/wiki/Air_door" title="Air door">Air door</a></li>
+<li><a href="/wiki/Air_filter" title="Air filter">Air filter</a></li>
+<li><a href="/wiki/Air_handler" title="Air handler">Air handler</a></li>
+<li><a href="/wiki/Air_ioniser" title="Air ioniser">Air ionizer</a></li>
+<li><a href="/wiki/Air-mixing_plenum" title="Air-mixing plenum">Air-mixing plenum</a></li>
+<li><a href="/wiki/Air_purifier" title="Air purifier">Air purifier</a></li>
+<li><a href="/wiki/Air_source_heat_pump" title="Air source heat pump">Air source heat pump</a></li>
+<li><a href="/wiki/Attic_fan" title="Attic fan">Attic fan</a></li>
+<li><a href="/wiki/Automatic_balancing_valve" title="Automatic balancing valve">Automatic balancing valve</a></li>
+<li><a href="/wiki/Back_boiler" title="Back boiler">Back boiler</a></li>
+<li><a href="/wiki/Barrier_pipe" title="Barrier pipe">Barrier pipe</a></li>
+<li><a href="/wiki/Blast_damper" title="Blast damper">Blast damper</a></li>
+<li><a href="/wiki/Boiler" title="Boiler">Boiler</a></li>
+<li><a href="/wiki/Centrifugal_fan" title="Centrifugal fan">Centrifugal fan</a></li>
+<li><a href="/wiki/Ceramic_heater" title="Ceramic heater">Ceramic heater</a></li>
+<li><a href="/wiki/Chiller" title="Chiller">Chiller</a></li>
+<li><a href="/wiki/Condensate_pump" title="Condensate pump">Condensate pump</a></li>
+<li><a href="/wiki/Condenser_(heat_transfer)" title="Condenser (heat transfer)">Condenser</a></li>
+<li><a href="/wiki/Condensing_boiler" title="Condensing boiler">Condensing boiler</a></li>
+<li><a href="/wiki/Convection_heater" title="Convection heater">Convection heater</a></li>
+<li><a href="/wiki/Compressor" title="Compressor">Compressor</a></li>
+<li><a href="/wiki/Cooling_tower" title="Cooling tower">Cooling tower</a></li>
+<li><a href="/wiki/Damper_(flow)" title="Damper (flow)">Damper</a></li>
+<li><a href="/wiki/Dehumidifier" title="Dehumidifier">Dehumidifier</a></li>
+<li><a href="/wiki/Duct_(flow)" title="Duct (flow)">Duct</a></li>
+<li><a href="/wiki/Economizer" title="Economizer">Economizer</a></li>
+<li><a href="/wiki/Electrostatic_precipitator" title="Electrostatic precipitator">Electrostatic precipitator</a></li>
+<li><a href="/wiki/Evaporative_cooler" title="Evaporative cooler">Evaporative cooler</a></li>
+<li><a href="/wiki/Evaporator" title="Evaporator">Evaporator</a></li>
+<li><a href="/wiki/Exhaust_hood" class="mw-redirect" title="Exhaust hood">Exhaust hood</a></li>
+<li><a href="/wiki/Expansion_tank" title="Expansion tank">Expansion tank</a></li>
+<li><a href="/wiki/Fan_(machine)" title="Fan (machine)">Fan</a></li>
+<li><a href="/wiki/Fan_coil_unit" title="Fan coil unit">Fan coil unit</a></li>
+<li><a href="/wiki/Fan_filter_unit" title="Fan filter unit">Fan filter unit</a></li>
+<li><a href="/wiki/Fan_heater" title="Fan heater">Fan heater</a></li>
+<li><a href="/wiki/Fire_damper" title="Fire damper">Fire damper</a></li>
+<li><a href="/wiki/Fireplace" title="Fireplace">Fireplace</a></li>
+<li><a href="/wiki/Fireplace_insert" title="Fireplace insert">Fireplace insert</a></li>
+<li><a href="/wiki/Freeze_stat" title="Freeze stat">Freeze stat</a></li>
+<li><a href="/wiki/Flue" title="Flue">Flue</a></li>
+<li><a href="/wiki/Freon" title="Freon">Freon</a></li>
+<li><a href="/wiki/Fume_hood" title="Fume hood">Fume hood</a></li>
+<li><a href="/wiki/Furnace_(house_heating)" class="mw-redirect" title="Furnace (house heating)">Furnace</a></li>
+<li><a href="/wiki/Gas_compressor" class="mw-redirect" title="Gas compressor">Gas compressor</a></li>
+<li><a href="/wiki/Gas_heater" title="Gas heater">Gas heater</a></li>
+<li><a href="/wiki/Gasoline_heater" title="Gasoline heater">Gasoline heater</a></li>
+<li><a href="/wiki/Grease_duct" title="Grease duct">Grease duct</a></li>
+<li><a href="/wiki/Grille_(architecture)" title="Grille (architecture)">Grille</a></li>
+<li><a href="/wiki/Ground-coupled_heat_exchanger" title="Ground-coupled heat exchanger">Ground-coupled heat exchanger</a></li>
+<li><a href="/wiki/Ground_source_heat_pump" title="Ground source heat pump">Ground source heat pump</a></li>
+<li><a href="/wiki/Heat_exchanger" title="Heat exchanger">Heat exchanger</a></li>
+<li><a href="/wiki/Heat_pipe" title="Heat pipe">Heat pipe</a></li>
+<li><a href="/wiki/Heat_pump" title="Heat pump">Heat pump</a></li>
+<li><a href="/wiki/Heating_film" title="Heating film">Heating film</a></li>
+<li><a href="/wiki/Heating_system" title="Heating system">Heating system</a></li>
+<li><a href="/wiki/HEPA" title="HEPA">HEPA</a></li>
+<li><a href="/wiki/High_efficiency_glandless_circulating_pump" title="High efficiency glandless circulating pump">High efficiency glandless circulating pump</a></li>
+<li><a href="/wiki/High-pressure_cut-off_switch" class="mw-redirect" title="High-pressure cut-off switch">High-pressure cut-off switch</a></li>
+<li><a href="/wiki/Humidifier" title="Humidifier">Humidifier</a></li>
+<li><a href="/wiki/Infrared_heater" title="Infrared heater">Infrared heater</a></li>
+<li><a href="/wiki/Inverter_compressor" title="Inverter compressor">Inverter compressor</a></li>
+<li><a href="/wiki/Kerosene_heater" title="Kerosene heater">Kerosene heater</a></li>
+<li><a href="/wiki/Louver" title="Louver">Louver</a></li>
+<li><a href="/wiki/Mechanical_room" title="Mechanical room">Mechanical room</a></li>
+<li><a href="/wiki/Oil_heater" title="Oil heater">Oil heater</a></li>
+<li><a href="/wiki/Packaged_terminal_air_conditioner" title="Packaged terminal air conditioner">Packaged terminal air conditioner</a></li>
+<li><a href="/wiki/Plenum_space" title="Plenum space">Plenum space</a></li>
+<li><a href="/wiki/Pressurisation_ductwork" title="Pressurisation ductwork">Pressurisation ductwork</a></li>
+<li><a href="/wiki/Process_duct_work" title="Process duct work">Process duct work</a></li>
+<li><a href="/wiki/Radiator_(heating)" title="Radiator (heating)">Radiator</a></li>
+<li><a href="/wiki/Radiator_reflector" title="Radiator reflector">Radiator reflector</a></li>
+<li><a href="/wiki/Recuperator" title="Recuperator">Recuperator</a></li>
+<li><a href="/wiki/Refrigerant" title="Refrigerant">Refrigerant</a></li>
+<li><a href="/wiki/Register_(air_and_heating)" title="Register (air and heating)">Register</a></li>
+<li><a href="/wiki/Reversing_valve" title="Reversing valve">Reversing valve</a></li>
+<li><a href="/wiki/Run-around_coil" title="Run-around coil">Run-around coil</a></li>
+<li><a href="/wiki/Sail_switch" title="Sail switch">Sail switch</a></li>
+<li><a href="/wiki/Scroll_compressor" title="Scroll compressor">Scroll compressor</a></li>
+<li><a href="/wiki/Solar_chimney" title="Solar chimney">Solar chimney</a></li>
+<li><a href="/wiki/Solar-assisted_heat_pump" title="Solar-assisted heat pump">Solar-assisted heat pump</a></li>
+<li><a href="/wiki/Space_heater" title="Space heater">Space heater</a></li>
+<li><a href="/wiki/Smoke_canopy" title="Smoke canopy">Smoke canopy</a></li>
+<li><a href="/wiki/Smoke_damper" title="Smoke damper">Smoke damper</a></li>
+<li><a href="/wiki/Smoke_exhaust_ductwork" title="Smoke exhaust ductwork">Smoke exhaust ductwork</a></li>
+<li><a href="/wiki/Thermal_expansion_valve" title="Thermal expansion valve">Thermal expansion valve</a></li>
+<li><a href="/wiki/Thermal_wheel" title="Thermal wheel">Thermal wheel</a></li>
+<li><a href="/wiki/Thermostatic_radiator_valve" title="Thermostatic radiator valve">Thermostatic radiator valve</a></li>
+<li><a href="/wiki/Trickle_vent" title="Trickle vent">Trickle vent</a></li>
+<li><a href="/wiki/Trombe_wall" title="Trombe wall">Trombe wall</a></li>
+<li><a href="/wiki/TurboSwing" title="TurboSwing">TurboSwing</a></li>
+<li><a href="/wiki/Turning_vanes_(HVAC)" title="Turning vanes (HVAC)">Turning vanes</a></li>
+<li><a href="/wiki/Ultra-low_particulate_air" title="Ultra-low particulate air">Ultra-low particulate air</a> (ULPA)</li>
+<li><a href="/wiki/Whole-house_fan" title="Whole-house fan">Whole-house fan</a></li>
+<li><a href="/wiki/Windcatcher" title="Windcatcher">Windcatcher</a></li>
+<li><a href="/wiki/Wood-burning_stove" title="Wood-burning stove">Wood-burning stove</a></li>
+<li><a href="/wiki/Zone_valve" title="Zone valve">Zone valve</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Measurement<br />and control</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Air_flow_meter" title="Air flow meter">Air flow meter</a></li>
+<li><a href="/wiki/Aquastat" title="Aquastat">Aquastat</a></li>
+<li><a href="/wiki/BACnet" title="BACnet">BACnet</a></li>
+<li><a href="/wiki/Blower_door" title="Blower door">Blower door</a></li>
+<li><a href="/wiki/Building_automation" title="Building automation">Building automation</a></li>
+<li><a href="/wiki/Carbon_dioxide_sensor" title="Carbon dioxide sensor">Carbon dioxide sensor</a></li>
+<li><a href="/wiki/Clean_air_delivery_rate" title="Clean air delivery rate">Clean air delivery rate</a> (CADR)</li>
+<li><a href="/wiki/Control_valve" title="Control valve">Control valve</a></li>
+<li><a href="/wiki/Gas_detector" title="Gas detector">Gas detector</a></li>
+<li><a href="/wiki/Home_energy_monitor" title="Home energy monitor">Home energy monitor</a></li>
+<li><a href="/wiki/Humidistat" title="Humidistat">Humidistat</a></li>
+<li><a href="/wiki/HVAC_control_system" title="HVAC control system">HVAC control system</a></li>
+<li><a href="/wiki/Infrared_thermometer" title="Infrared thermometer">Infrared thermometer</a></li>
+<li><a href="/wiki/Intelligent_buildings" class="mw-redirect" title="Intelligent buildings">Intelligent buildings</a></li>
+<li><a href="/wiki/LonWorks" title="LonWorks">LonWorks</a></li>
+<li><a href="/wiki/Minimum_efficiency_reporting_value" title="Minimum efficiency reporting value">Minimum efficiency reporting value</a> (MERV)</li>
+<li><a href="/wiki/Normal_temperature_and_pressure" class="mw-redirect" title="Normal temperature and pressure">Normal temperature and pressure</a> (NTP)</li>
+<li><a href="/wiki/OpenTherm" title="OpenTherm">OpenTherm</a></li>
+<li><a href="/wiki/Programmable_communicating_thermostat" title="Programmable communicating thermostat">Programmable communicating thermostat</a></li>
+<li><a href="/wiki/Programmable_thermostat" title="Programmable thermostat">Programmable thermostat</a></li>
+<li><a href="/wiki/Psychrometrics" title="Psychrometrics">Psychrometrics</a></li>
+<li><a href="/wiki/Room_temperature" title="Room temperature">Room temperature</a></li>
+<li><a href="/wiki/Smart_thermostat" title="Smart thermostat">Smart thermostat</a></li>
+<li><a href="/wiki/Standard_temperature_and_pressure" title="Standard temperature and pressure">Standard temperature and pressure</a> (STP)</li>
+<li><a href="/wiki/Thermographic_camera" class="mw-redirect" title="Thermographic camera">Thermographic camera</a></li>
+<li><a href="/wiki/Thermostat" title="Thermostat">Thermostat</a></li>
+<li><a href="/wiki/Thermostatic_radiator_valve" title="Thermostatic radiator valve">Thermostatic radiator valve</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Professions,<br />trades,<br />and services</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Architectural_acoustics" title="Architectural acoustics">Architectural acoustics</a></li>
+<li><a href="/wiki/Architectural_engineering" title="Architectural engineering">Architectural engineering</a></li>
+<li><a href="/wiki/Architectural_technologist" title="Architectural technologist">Architectural technologist</a></li>
+<li><a href="/wiki/Building_services_engineering" title="Building services engineering">Building services engineering</a></li>
+<li><a href="/wiki/Building_information_modeling" title="Building information modeling">Building information modeling</a> (BIM)</li>
+<li><a href="/wiki/Deep_energy_retrofit" title="Deep energy retrofit">Deep energy retrofit</a></li>
+<li><a href="/wiki/Duct_cleaning" class="mw-redirect" title="Duct cleaning">Duct cleaning</a></li>
+<li><a href="/wiki/Duct_leakage_testing" title="Duct leakage testing">Duct leakage testing</a></li>
+<li><a href="/wiki/Environmental_engineering" title="Environmental engineering">Environmental engineering</a></li>
+<li><a href="/wiki/Hydronic_balancing" title="Hydronic balancing">Hydronic balancing</a></li>
+<li><a href="/wiki/Kitchen_exhaust_cleaning" title="Kitchen exhaust cleaning">Kitchen exhaust cleaning</a></li>
+<li><a href="/wiki/Mechanical_engineering" title="Mechanical engineering">Mechanical engineering</a></li>
+<li><a href="/wiki/Mechanical,_electrical,_and_plumbing" title="Mechanical, electrical, and plumbing">Mechanical, electrical, and plumbing</a></li>
+<li><a href="/wiki/Mold_growth,_assessment,_and_remediation" class="mw-redirect" title="Mold growth, assessment, and remediation">Mold growth, assessment, and remediation</a></li>
+<li><a href="/wiki/Refrigerant_reclamation" title="Refrigerant reclamation">Refrigerant reclamation</a></li>
+<li><a href="/wiki/Testing,_adjusting,_balancing" title="Testing, adjusting, balancing">Testing, adjusting, balancing</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Industry <br />organizations</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Air_Conditioning,_Heating_and_Refrigeration_Institute" title="Air Conditioning, Heating and Refrigeration Institute">AHRI</a></li>
+<li><a href="/wiki/Air_Movement_and_Control_Association" title="Air Movement and Control Association">AMCA</a></li>
+<li><a href="/wiki/ASHRAE" title="ASHRAE">ASHRAE</a></li>
+<li><a href="/wiki/ASTM_International" title="ASTM International">ASTM International</a></li>
+<li><a href="/wiki/Building_Research_Establishment" title="Building Research Establishment">BRE</a></li>
+<li><a href="/wiki/BSRIA" title="BSRIA">BSRIA</a></li>
+<li><a href="/wiki/Chartered_Institution_of_Building_Services_Engineers" title="Chartered Institution of Building Services Engineers">CIBSE</a></li>
+<li><a href="/wiki/Institute_of_Refrigeration" title="Institute of Refrigeration">Institute of Refrigeration</a></li>
+<li><a href="/wiki/International_Institute_of_Refrigeration" title="International Institute of Refrigeration">IIR</a></li>
+<li><a href="/wiki/Leadership_in_Energy_and_Environmental_Design" class="mw-redirect" title="Leadership in Energy and Environmental Design">LEED</a></li>
+<li><a href="/wiki/Sheet_Metal_and_Air_Conditioning_Contractors%27_National_Association" title="Sheet Metal and Air Conditioning Contractors&#39; National Association">SMACNA</a></li>
+<li><a href="/wiki/Uniform_Mechanical_Code" title="Uniform Mechanical Code">UMC</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Health and safety</th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Indoor_air_quality" title="Indoor air quality">Indoor air quality</a> (IAQ)</li>
+<li><a href="/wiki/Passive_smoking" title="Passive smoking">Passive smoking</a></li>
+<li><a href="/wiki/Sick_building_syndrome" title="Sick building syndrome">Sick building syndrome</a> (SBS)</li>
+<li><a href="/wiki/Volatile_organic_compound" title="Volatile organic compound">Volatile organic compound</a> (VOC)</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">See also</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0;text-align: middle;"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/ASHRAE_Handbook" title="ASHRAE Handbook">ASHRAE Handbook</a></li>
+<li><a href="/wiki/Building_science" title="Building science">Building science</a></li>
+<li><a href="/wiki/Fireproofing" title="Fireproofing">Fireproofing</a></li>
+<li><a href="/wiki/Glossary_of_HVAC_terms" title="Glossary of HVAC terms">Glossary of HVAC terms</a></li>
+<li><a href="/wiki/Warm_Spaces" title="Warm Spaces">Warm Spaces</a></li>
+<li><a href="/wiki/World_Refrigeration_Day" title="World Refrigeration Day">World Refrigeration Day</a></li>
+<li><a href="/wiki/Template:Home_automation" title="Template:Home automation">Template:Home automation</a></li>
+<li><a href="/wiki/Template:Solar_energy" title="Template:Solar energy">Template:Solar energy</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"></div><div role="navigation" class="navbox" aria-labelledby="Seamanship_(seafaring)_topics" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1239400231"><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Seamanship" title="Template:Seamanship"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Seamanship" title="Template talk:Seamanship"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a href="/wiki/Special:EditPage/Template:Seamanship" title="Special:EditPage/Template:Seamanship"><abbr title="Edit this template">e</abbr></a></li></ul></div><div id="Seamanship_(seafaring)_topics" style="font-size:114%;margin:0 4em">Seamanship (seafaring) topics</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Seamanship" title="Seamanship">Seamanship</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Navigation" title="Navigation">Navigation</a></li>
+<li><a href="/wiki/Watchkeeping" title="Watchkeeping">Watchkeeping</a></li>
+<li><a href="/wiki/Ice_navigation" title="Ice navigation">Ice navigation</a></li>
+<li><a href="/wiki/Maritime_pilot" title="Maritime pilot">Pilotage</a></li>
+<li><a href="/wiki/Maritime_studies" title="Maritime studies">Maritime studies</a></li>
+<li><a href="/wiki/Sailing" title="Sailing">Sailing</a></li>
+<li><a href="/wiki/Glossary_of_nautical_terms" class="mw-redirect" title="Glossary of nautical terms">Nautical terms</a></li>
+<li><a href="/wiki/Naval_architecture" title="Naval architecture">Naval architecture</a></li>
+<li><a href="/wiki/Ship_stability" title="Ship stability">Ship stability</a></li>
+<li><a class="mw-selflink selflink">Hydrodynamics</a></li>
+<li><a href="/wiki/Ship-to-ship_cargo_transfer" title="Ship-to-ship cargo transfer">Ship-to-ship cargo transfer</a></li>
+<li><a href="/wiki/Propeller_walk" title="Propeller walk">Propeller walk</a></li>
+<li><a href="/wiki/Passage_planning" title="Passage planning">Passage planning</a></li>
+<li><a href="/wiki/Admiralty_law" title="Admiralty law">Maritime law</a></li>
+<li><a href="/wiki/Dry_dock" title="Dry dock">Dry-docking</a></li>
+<li><a href="/wiki/Ropework" title="Ropework">Ropework</a></li>
+<li><a href="/wiki/Knot" title="Knot">Knots</a></li>
+<li><a href="/wiki/Man_overboard_rescue_turn" title="Man overboard rescue turn">Man overboard rescue turn</a></li>
+<li><a href="/wiki/Buoy" title="Buoy">Buoyage</a></li>
+<li><a href="/wiki/Mooring" title="Mooring">Mooring</a></li>
+<li><a href="/wiki/Anchor" title="Anchor">Anchoring</a></li>
+<li><a href="/wiki/Sea_anchor" title="Sea anchor">Sea anchor</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1129693374"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1236075235"><style data-mw-deduplicate="TemplateStyles:r1038841319">.mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}</style><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1038841319"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1038841319"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1038841319"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1038841319"></div><div role="navigation" class="navbox authority-control" aria-label="Navbox" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control databases</a>: National <span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="https://www.wikidata.org/wiki/Q216320#identifiers" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></span></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"><ul><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="Fluid dynamics"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/sh85049376">United States</a></span></span></li><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="Fluides, Dynamique des"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb119314166">France</a></span></span></li><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="Fluides, Dynamique des"><a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb119314166">BnF data</a></span></span></li><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="dynamika tekutin"><a rel="nofollow" class="external text" href="https://aleph.nkp.cz/F/?func=find-c&amp;local_base=aut&amp;ccl_term=ica=ph114380&amp;CON_LNG=ENG">Czech Republic</a></span></span></li><li><span class="uid"><span class="rt-commentedText tooltip tooltip-dotted" title="Dinámica de fluidos"><a rel="nofollow" class="external text" href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX4659783">Spain</a></span></span></li><li><span class="uid"><a rel="nofollow" class="external text" href="https://lod.nl.go.kr/resource/KSH1998024462">Korea</a></span></li><li><span class="uid"><a rel="nofollow" class="external text" href="http://olduli.nli.org.il/F/?func=find-b&amp;local_base=NLX10&amp;find_code=UID&amp;request=987007538448805171">Israel</a></span></li></ul></div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.codfw.main‐6d49cf5db8‐9vbh7
+Cached time: 20241026231116
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 1.012 seconds
+Real time usage: 1.307 seconds
+Preprocessor visited node count: 4336/1000000
+Post‐expand include size: 135567/2097152 bytes
+Template argument size: 9421/2097152 bytes
+Highest expansion depth: 16/100
+Expensive parser function count: 10/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 166994/5000000 bytes
+Lua time usage: 0.590/10.000 seconds
+Lua memory usage: 10402193/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1009.614      1 -total
+ 21.59%  217.982      1 Template:Reflist
+ 16.15%  163.015     14 Template:Cite_book
+ 12.44%  125.614      1 Template:Continuum_mechanics
+  9.40%   94.931      1 Template:Short_description
+  7.84%   79.129      1 Template:Excerpt
+  7.75%   78.275      3 Template:Sidebar
+  7.35%   74.173      1 Template:Commons_category
+  7.12%   71.869      1 Template:Sister_project
+  6.92%   69.873      1 Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:11034-0!canonical and timestamp 20241026231116 and revision id 1246781511. Rendering was triggered because: api-parse
+ -->
+</div>
