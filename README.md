@@ -1,1 +1,1 @@
-# PS-BEAR
+# Polar PS-BEAR
