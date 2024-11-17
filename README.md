@@ -44,3 +44,6 @@ If you refer to this software or work in an academic publication, please cite as
 
 ### American Black Bear (Ursus Americanus) - Estimated Population: 600,000 to 900,000
 ![American Black Bear (Ursus Americanus)](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bear_in_motion%2C_Lamar_Valley_%2818394494681%29.jpg/1024px-Bear_in_motion%2C_Lamar_Valley_%2818394494681%29.jpg)
+
+## Planned Architecture of PS-BEAR (OCR is abbreviation for Optical Character Recognition)
+![1](https://github.com/user-attachments/assets/16b54ce1-8fe4-4d04-8990-18461c20bda7)
