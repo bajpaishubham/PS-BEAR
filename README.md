@@ -20,9 +20,9 @@ If you refer to this software or work in an academic publication, please cite as
 ## A few images of bears
 
 ### Giant Panda (Ailuropoda Melanoleuca) - Estimated Population: 500 to 1,000
-![Giant Panda (Ailuropoda Melanoleuca)](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Ailuropoda_melanoleuca_Giant_Panda5.JPG/640px-Ailuropoda_melanoleuca_Giant_Panda5.JPG)
-![Giant Panda (Ailuropoda Melanoleuca)](https://upload.wikimedia.org/wikipedia/commons/4/42/%C2%A1Panda_en_peligro_de_extinci%C3%B3n%21.jpg)
-![Giant Panda (Ailuropoda Melanoleuca)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Panda_g%C3%A9ant_%28Ailuropoda_melanoleuca%29_%283%29.jpg/1024px-Panda_g%C3%A9ant_%28Ailuropoda_melanoleuca%29_%283%29.jpg)
+![Giant Panda (Ailuropoda Melanoleuca)](images/1_Ailuropoda_melanoleuca_Giant_Panda5.JPG)
+![Giant Panda (Ailuropoda Melanoleuca)](images/2_%C2%A1Panda_en_peligro_de_extinci%C3%B3n%21.jpg)
+![Giant Panda (Ailuropoda Melanoleuca)](images/3_Panda_g%C3%A9ant_%28Ailuropoda_melanoleuca%29_%283%29.jpg)
 
 ### Kodiak Bear (Ursus Arctos Middendorffi) - Estimated Population: 3,500
 ![Kodiak Bear (Ursus Arctos Middendorffi) - Female with its cubs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Brown_bear_cow_with_cubs%2C_USFWS_05373.jpg/667px-Brown_bear_cow_with_cubs%2C_USFWS_05373.jpg)
