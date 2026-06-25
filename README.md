@@ -1,17 +1,21 @@
 # American Black PS-BEAR
 
-American Black PS-BEAR is a quick prototype built with the help of generative AI models. Although, the `Searcher` and `Solver` sections and hence the visible application does not use any generative AI models, subsequent versions and other PS-BEARs will be built mainly with the help of deterministic models but this branch will be mostly generative AI dependent. The application is live at [this url](https://psbear.streamlit.app/).
+American Black PS-BEAR is a quick prototype built with the help of generative AI models. Although, the `Searcher` and `Solver` sections and hence the visible application does not use any generative AI models, subsequent versions and other PS-BEARs will be built mainly with the help of deterministic models but this branch will be mostly generative AI based. The application is live at [this url](https://psbear.streamlit.app/).
 
 **Note:** Default copyright laws apply, meaning that the repository owner retains all rights to the source code and no one may reproduce, distribute, or create derivative works from this work.
 
 **v1.0.0:** For this version, Claude Code with model `Opus 4.8` was used to build the automated batch data processing pipeline and the Solver and Searcher sections. For description generation for the various topics and subtopics and for generation of the formulae table from formulae present in [Problems in General Physics by I.E. Irodov](https://books.google.co.in/books/about/Problems_in_General_Physics.html?id=Qj0L0QEACAAJ&redir_esc=y), `gemini-2.5-flash` model and Mistral OCR (`mistral-ocr-4-launch`) was used.
 
 **TODO List**
+- [ ] Need to update formula in plain english column
+- [ ] Inclusion of other relevant units
 - [ ] Image-wise data processing and manual validation and updation of data processed
 - [ ] Wikipedia (or some other credible source) based descriptions (basically not AI generated)
 - [ ] Addition of a call to a generative AI model for a probabilistic answer
+- [ ] Question understanding to populate numerical values for solver
 - [ ] Multiple formulae approach
-- [ ] Simulator based solution approach
+
+Step-wise logical approach and simulator based solution approach will be implemented on some other branch
 
 ## Acknowledgement
 
