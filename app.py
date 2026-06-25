@@ -295,8 +295,8 @@ def render_solver() -> None:
 # Router
 # ---------------------------------------------------------------------------
 def main():
-    st.set_page_config(page_title="PS-BEAR (American Black)", layout="wide")
-    st.title("PS-BEAR — American Black")
+    st.set_page_config(page_title="American Black PS-BEAR", layout="wide")
+    st.title("American Black PS-BEAR")
 
     with st.sidebar:
         st.header("Sections")
