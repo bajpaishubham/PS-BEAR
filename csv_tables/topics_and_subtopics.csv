@@ -1,0 +1,41 @@
+Primary_key,Topic_id,Topic,Topic_short,Subtopic_id,Subtopic
+1,1,Physical Fundamentals of Mechanics,Mechanics,1,Kinematics
+2,1,Physical Fundamentals of Mechanics,Mechanics,2,The Fundamental Equation of Dynamics
+3,1,Physical Fundamentals of Mechanics,Mechanics,3,"Laws of Conservation of Energy, Momentum, and Angular Momentum"
+4,1,Physical Fundamentals of Mechanics,Mechanics,4,Universal Gravitation
+5,1,Physical Fundamentals of Mechanics,Mechanics,5,Dynamics of a Solid Body
+6,1,Physical Fundamentals of Mechanics,Mechanics,6,Elastic Deformations of a Solid Body
+7,1,Physical Fundamentals of Mechanics,Mechanics,7,Hydrodynamics
+8,1,Physical Fundamentals of Mechanics,Mechanics,8,Relativistic Mechanics
+9,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,9,Equation of the Gas State. Processes
+10,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,10,The First Law of Thermodynamics. Heat Capacity
+11,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,11,Kinetic Theory of Gases. Boltzmann's Law and Maxwell's Distribution
+12,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,12,The Second Law of Thermodynamics. Entropy
+13,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,13,Liquids. Capillary Effects
+14,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,14,Phase Transformations
+15,2,Thermodynamics and Molecular Physics,Thermodynamics and Molecular Physics,15,Transport Phenomena
+16,3,Electrodynamics,Electrodynamics,16,Constant Electric Field in Vacuum
+17,3,Electrodynamics,Electrodynamics,17,Conductors and Dielectrics in an Electric Field
+18,3,Electrodynamics,Electrodynamics,18,Electric Capacitance. Energy of an Electric Field
+19,3,Electrodynamics,Electrodynamics,19,Electric Current
+20,3,Electrodynamics,Electrodynamics,20,Constant Magnetic Field. Magnetics
+21,3,Electrodynamics,Electrodynamics,21,Electromagnetic Induction. Maxwell's Equations
+22,3,Electrodynamics,Electrodynamics,22,Motion of Charged Particles in Electric and Magnetic Fields
+23,4,Oscillations and Waves,Oscillations and Waves,23,Mechanical Oscillations
+24,4,Oscillations and Waves,Oscillations and Waves,24,Electric Oscillations
+25,4,Oscillations and Waves,Oscillations and Waves,25,Elastic Waves. Acoustics
+26,4,Oscillations and Waves,Oscillations and Waves,26,Electromagnetic Waves. Radiation
+27,5,Optics,Optics,27,Photometry and Geometrical Optics
+28,5,Optics,Optics,28,Interference of Light
+29,5,Optics,Optics,29,Diffraction of Light
+30,5,Optics,Optics,30,Polarization of Light
+31,5,Optics,Optics,31,Dispersion and Absorption of Light
+32,5,Optics,Optics,32,Optics of Moving Sources
+33,5,Optics,Optics,33,Thermal Radiation. Quantum Nature of Light
+34,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,34,Scattering of Particles. Rutherford-Bohr Atom
+35,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,35,Wave Properties of Particles. Schrodinger Equation
+36,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,36,Properties of Atoms. Spectra
+37,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,37,Molecules and Crystals
+38,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,38,Radioactivity
+39,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,39,Nuclear Reactions
+40,6,Atomic and Nuclear Physics,Atomic and Nuclear Physics,40,Elementary Particles

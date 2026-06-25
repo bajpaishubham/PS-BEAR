@@ -1,0 +1,5 @@
+streamlit>=1.36
+scikit-learn>=1.4
+numpy>=1.26
+sympy>=1.12
+requests>=2.32
