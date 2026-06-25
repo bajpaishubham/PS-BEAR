@@ -1,6 +1,6 @@
 # American Black PS-BEAR
 
-American Black PS-BEAR is a quick prototype built with the help of generative AI models. Although, the `Searcher` and `Solver` sections and hence the visible application does not use any generative AI models, subsequent versions and other PS-BEARs will be built mainly with the help of deterministic models but this branch will be mostly generative AI based. The application is live at [this url](https://psbear.streamlit.app/).
+American Black PS-BEAR is a quick prototype built with the help of generative AI models. Although, the `Searcher` and `Solver` sections and hence the visible application does not use any generative AI models, subsequent versions and other PS-BEARs will be built mainly with the help of deterministic models but this branch will be mostly generative AI dependent. The application is live at [this url](https://psbear.streamlit.app/).
 
 **Note:** Default copyright laws apply, meaning that the repository owner retains all rights to the source code and no one may reproduce, distribute, or create derivative works from this work.
 
