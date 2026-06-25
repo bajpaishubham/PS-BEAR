@@ -1,6 +1,6 @@
 # Polar PS-BEAR
 
-The application is live at [this url](https://psbear.streamlit.app/).
+Currently, this branch is being updated. The application is live at [this url](https://psbear.streamlit.app/).
 
 **Note:** Default copyright laws apply, meaning that the repository owner retains all rights to the source code and no one may reproduce, distribute, or create derivative works from this work.
 
